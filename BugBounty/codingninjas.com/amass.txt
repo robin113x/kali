@@ -1,0 +1,22 @@
+[92mcodingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95mmx_record[0m [97m-->[0m [92malt2.aspmx.l.google.com[0m[94m (FQDN)[0m
+[92mcodingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95mmx_record[0m [97m-->[0m [92maspmx.l.google.com[0m[94m (FQDN)[0m
+[92mcodingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95mmx_record[0m [97m-->[0m [92malt1.aspmx.l.google.com[0m[94m (FQDN)[0m
+[92mcodingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95mmx_record[0m [97m-->[0m [92malt4.aspmx.l.google.com[0m[94m (FQDN)[0m
+[92mcodingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95mmx_record[0m [97m-->[0m [92malt3.aspmx.l.google.com[0m[94m (FQDN)[0m
+[92mcodestudio-infra.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95mcname_record[0m [97m-->[0m [92mcodestudio-infra.web.app[0m[94m (FQDN)[0m
+[92maz-ninjasio-staging.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m20.193.131.128[0m[94m (IPAddress)[0m
+[92mclassroom.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95mcname_record[0m [97m-->[0m [92mclassroom.azureedge.net[0m[94m (FQDN)[0m
+[92mclassroom.azureedge.net[0m[94m (FQDN)[0m [97m-->[0m [95mcname_record[0m [97m-->[0m [92mclassroom.afd.azureedge.net[0m[94m (FQDN)[0m
+[92mprofile.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m151.101.65.195[0m[94m (IPAddress)[0m
+[92mprofile.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m151.101.1.195[0m[94m (IPAddress)[0m
+[92mfiles.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95mcname_record[0m [97m-->[0m [92mcodingninjasfiles.azureedge.net[0m[94m (FQDN)[0m
+[92mcodingninjasfiles.azureedge.net[0m[94m (FQDN)[0m [97m-->[0m [95mcname_record[0m [97m-->[0m [92mcodingninjasfiles.afd.azureedge.net[0m[94m (FQDN)[0m
+[92maz-landing.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95mcname_record[0m [97m-->[0m [92mlanding-viewer-request.azurewebsites.net[0m[94m (FQDN)[0m
+[92mlanding-infra.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95mcname_record[0m [97m-->[0m [92mlanding-infra.web.app[0m[94m (FQDN)[0m
+[92mclassroom-infra.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95mcname_record[0m [97m-->[0m [92mclassroom-infra.web.app[0m[94m (FQDN)[0m
+[92m151.101.0.0/21[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m151.101.1.195[0m[94m (IPAddress)[0m
+[92m20.192.0.0/10[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m20.193.131.128[0m[94m (IPAddress)[0m
+[92m54113[0m[94m (ASN)[0m [97m-->[0m [95mmanaged_by[0m [97m-->[0m [92mFASTLY - Fastly[0m[94m (RIROrganization)[0m
+[92m54113[0m[94m (ASN)[0m [97m-->[0m [95mannounces[0m [97m-->[0m [92m151.101.0.0/21[0m[94m (Netblock)[0m
+[92m8075[0m[94m (ASN)[0m [97m-->[0m [95mmanaged_by[0m [97m-->[0m [92mMICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation[0m[94m (RIROrganization)[0m
+[92m8075[0m[94m (ASN)[0m [97m-->[0m [95mannounces[0m [97m-->[0m [92m20.192.0.0/10[0m[94m (Netblock)[0m
