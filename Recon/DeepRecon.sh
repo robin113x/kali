@@ -38,7 +38,7 @@ altdns -i all_subdomains.txt -o data_output -w /usr/share/wordlist/words.txt -r 
 
 
 echo "**********waybackurls & waybackrobots ******************"
-~/go/bin/waybackrobots -d "$domain" | tee "$ouwaybackrobots.txt"
+~/go/bin/waybackrobots -d "$domain" | tee "waybackrobots.txt"
 cat domains.txt |  ~/go/bin/waybackurls |tee  urls_wayback.txt
 
 
