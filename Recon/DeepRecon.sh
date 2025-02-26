@@ -22,7 +22,7 @@ echo "********************************Active Enumeration************************
 
 # Active Enumeration
 subfinder -d "$domain" -all -recursive -o "subfinder.txt"
-sublist3r -b -d "$domain" -p 80,443  -v 
+sublist3r -b -d "$domain" -p 80,443  -v  | tee "sublist3r.txt"
 assetfinder -subs-only "$domain" | tee "assetfinder.txt"
 shodanx subdomain -d "$domain" -ra -o "shodanx.txt"
 knockpy -d "$domain" | tee "knockpy.txt"
