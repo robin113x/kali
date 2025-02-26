@@ -52,7 +52,7 @@ wait
 
 
 cat "$output"/*.txt | anew "$output/all_subdomains.txt"
-massdns -r "$RESOLVER" -t A -o S "$output/all_subdomains.txt" > "$output/massdns_resolved.txt"
+
 
 # --- Live Host Discovery ---
 log_message "[+] Live Host Discovery 🚀"
