@@ -20,3 +20,45 @@
 [92m54113[0m[94m (ASN)[0m [97m-->[0m [95mannounces[0m [97m-->[0m [92m151.101.0.0/21[0m[94m (Netblock)[0m
 [92m8075[0m[94m (ASN)[0m [97m-->[0m [95mmanaged_by[0m [97m-->[0m [92mMICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation[0m[94m (RIROrganization)[0m
 [92m8075[0m[94m (ASN)[0m [97m-->[0m [95mannounces[0m [97m-->[0m [92m20.192.0.0/10[0m[94m (Netblock)[0m
+[92mcampus-help.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95mcname_record[0m [97m-->[0m [92mcodingninjascare.freshdesk.com[0m[94m (FQDN)[0m
+[92mwww.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m52.222.144.5[0m[94m (IPAddress)[0m
+[92mwww.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m52.222.144.37[0m[94m (IPAddress)[0m
+[92mwww.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m52.222.144.99[0m[94m (IPAddress)[0m
+[92mwww.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m52.222.144.11[0m[94m (IPAddress)[0m
+[92murl6536.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95mcname_record[0m [97m-->[0m [92msendgrid.net[0m[94m (FQDN)[0m
+[92mautocomplete.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m20.204.244.216[0m[94m (IPAddress)[0m
+[92mplayground.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m151.101.1.195[0m[94m (IPAddress)[0m
+[92mplayground.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m151.101.65.195[0m[94m (IPAddress)[0m
+[92mim-staging.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m151.101.1.195[0m[94m (IPAddress)[0m
+[92mim-staging.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m151.101.65.195[0m[94m (IPAddress)[0m
+[92mcode360.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m18.239.142.76[0m[94m (IPAddress)[0m
+[92mcode360.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m18.239.142.104[0m[94m (IPAddress)[0m
+[92mcode360.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m18.239.142.37[0m[94m (IPAddress)[0m
+[92mcode360.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m18.239.142.125[0m[94m (IPAddress)[0m
+[92mvideo-session-staging.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m104.211.115.124[0m[94m (IPAddress)[0m
+[92manalytics.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m20.235.213.23[0m[94m (IPAddress)[0m
+[92maz-infra-staging-1.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m20.197.5.71[0m[94m (IPAddress)[0m
+[92mcareercamp-staging.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m199.36.158.100[0m[94m (IPAddress)[0m
+[92mcampus.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m151.101.1.195[0m[94m (IPAddress)[0m
+[92mcampus.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m151.101.65.195[0m[94m (IPAddress)[0m
+[92m20.192.0.0/10[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m20.204.244.216[0m[94m (IPAddress)[0m
+[92m20.192.0.0/10[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m20.235.213.23[0m[94m (IPAddress)[0m
+[92m20.192.0.0/10[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m20.197.5.71[0m[94m (IPAddress)[0m
+[92m151.101.64.0/22[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m151.101.65.195[0m[94m (IPAddress)[0m
+[92m52.222.144.0/21[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m52.222.144.5[0m[94m (IPAddress)[0m
+[92m52.222.144.0/21[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m52.222.144.37[0m[94m (IPAddress)[0m
+[92m52.222.144.0/21[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m52.222.144.99[0m[94m (IPAddress)[0m
+[92m52.222.144.0/21[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m52.222.144.11[0m[94m (IPAddress)[0m
+[92m18.238.0.0/15[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m18.239.142.76[0m[94m (IPAddress)[0m
+[92m18.238.0.0/15[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m18.239.142.104[0m[94m (IPAddress)[0m
+[92m18.238.0.0/15[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m18.239.142.37[0m[94m (IPAddress)[0m
+[92m18.238.0.0/15[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m18.239.142.125[0m[94m (IPAddress)[0m
+[92m104.208.0.0/13[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m104.211.115.124[0m[94m (IPAddress)[0m
+[92m199.36.158.0/24[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m199.36.158.100[0m[94m (IPAddress)[0m
+[92m54113[0m[94m (ASN)[0m [97m-->[0m [95mannounces[0m [97m-->[0m [92m151.101.64.0/22[0m[94m (Netblock)[0m
+[92m54113[0m[94m (ASN)[0m [97m-->[0m [95mannounces[0m [97m-->[0m [92m199.36.158.0/24[0m[94m (Netblock)[0m
+[92m8075[0m[94m (ASN)[0m [97m-->[0m [95mannounces[0m [97m-->[0m [92m104.208.0.0/13[0m[94m (Netblock)[0m
+[92m16509[0m[94m (ASN)[0m [97m-->[0m [95mmanaged_by[0m [97m-->[0m [92mAMAZON-02 - Amazon.com, Inc.[0m[94m (RIROrganization)[0m
+[92m16509[0m[94m (ASN)[0m [97m-->[0m [95mannounces[0m [97m-->[0m [92m52.222.144.0/21[0m[94m (Netblock)[0m
+[92m0[0m[94m (ASN)[0m [97m-->[0m [95mmanaged_by[0m [97m-->[0m [92mNot routed[0m[94m (RIROrganization)[0m
+[92m0[0m[94m (ASN)[0m [97m-->[0m [95mannounces[0m [97m-->[0m [92m18.238.0.0/15[0m[94m (Netblock)[0m
