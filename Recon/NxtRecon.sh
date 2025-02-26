@@ -31,7 +31,6 @@ passive_enum() {
     curl -s "https://api.hackertarget.com/hostsearch/?q=$domain" | cut -d',' -f1 | sort -u | tee "hackertarget_passive.txt"
     curl -s "https://api.threatcrowd.org/searchApi/v2/domain/report/?domain=$domain" | jq -r '.subdomains[]' | sort -u | tee "threatcrowd_passive.txt"
     curl -s "https://riddler.io/search/exportcsv?q=pld:$domain" | grep -oE "[a-zA-Z0-9._-]+\.$domain" | sort -u | tee "riddler_passive.txt"
-    curl -s "https://dns.bufferover.run/dns?q=.$domain" | jq -r '.FDNS_A[]' | cut -d',' -f2 | sort -u | tee "bufferover_passive.txt"
     curl -s "https://urlscan.io/api/v1/search/?q=domain:$domain&size=10000" | jq -r '.results[]?.page?.domain' | sort -u | tee "urlscan_passive.txt"
 }
 
