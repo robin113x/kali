@@ -339,3 +339,7 @@
 [92m2607:f8b0::/32[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m2607:f8b0:4004:c08::1a[0m[94m (IPAddress)[0m
 [92m142.250.102.0/24[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m142.250.102.26[0m[94m (IPAddress)[0m
 [92m15169[0m[94m (ASN)[0m [97m-->[0m [95mannounces[0m [97m-->[0m [92m142.250.102.0/24[0m[94m (Netblock)[0m
+[92mghs.googlehosted.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m172.253.122.121[0m[94m (IPAddress)[0m
+[92mghs.googlehosted.com[0m[94m (FQDN)[0m [97m-->[0m [95maaaa_record[0m [97m-->[0m [92m2404:6800:4003:c02::79[0m[94m (IPAddress)[0m
+[92m172.253.122.0/24[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m172.253.122.121[0m[94m (IPAddress)[0m
+[92m15169[0m[94m (ASN)[0m [97m-->[0m [95mannounces[0m [97m-->[0m [92m172.253.122.0/24[0m[94m (Netblock)[0m
