@@ -29,7 +29,7 @@ subfinder -d "$domain" -all -recursive -o "subfinder.txt"
 sublist3r -d "$domain"  -v  -o "sublist3r.txt"
 assetfinder -subs-only "$domain" | tee "assetfinder.txt"
 shodanx subdomain -d "$domain" -ra -o "shodanx.txt"
-knockpy -d "$domain" codingninjas.com | tee "knockpy.txt"
+knockpy -d "$domain" --recon | tee "knockpy.txt"
 amass enum -norecursive -d "$domain" -o "amass.txt" 
 subrute -d "$domain" | tee "subrute.txt"
 wait
