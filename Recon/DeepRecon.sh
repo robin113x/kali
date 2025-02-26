@@ -14,6 +14,7 @@ pwd
 sleep 5
 
 
+
 echo "********************************Passive Enumeration*********************************************"
 curl -s "https://crt.sh/?q=%.$domain&output=json" | jq -r '.[].name_value' | sed 's/\*\.//g' | sort -u | tee "crtsh_passive.txt"
 curl -s "https://otx.alienvault.com/api/v1/indicators/hostname/$domain/passive_dns" | jq -r '.passive_dns[]?.hostname' | sort -u | tee "alienvault_passive.txt"
