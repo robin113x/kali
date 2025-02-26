@@ -1,182 +1,78 @@
-[91m
-                 ____        _     _ _     _   _____
-                / ___| _   _| |__ | (_)___| |_|___ / _ __
-                \___ \| | | | '_ \| | / __| __| |_ \| '__|
-                 ___) | |_| | |_) | | \__ \ |_ ___) | |
-                |____/ \__,_|_.__/|_|_|___/\__|____/|_|[0m[93m
-
-                # Coded By Ahmed Aboul-Ela - @aboul3la
-    
-[94m[-] Enumerating subdomains now for codingninjas.com[0m
-[93m[-] verbosity is enabled, will show the subdomains results in realtime[0m
-[92m[-] Searching now in Baidu..[0m
-[92m[-] Searching now in Yahoo..[0m
-[92m[-] Searching now in Google..[0m
-[92m[-] Searching now in Bing..[0m
-[92m[-] Searching now in Ask..[0m
-[92m[-] Searching now in Netcraft..[0m
-[92m[-] Searching now in DNSdumpster..[0m
-[92m[-] Searching now in Virustotal..[0m
-[92m[-] Searching now in ThreatCrowd..[0m
-[92m[-] Searching now in SSL Certificates..[0m
-[92m[-] Searching now in PassiveDNS..[0m
-[91m[!] Error: Virustotal probably now is blocking our requests[0m
-[91m[!] Error: Google probably now is blocking our requests[0m
-[91m[~] Finished now the Google Enumeration ...[0m
-[91mSSL Certificates: [0maz-sandbox-main-staging.codingninjas.com
-[91mSSL Certificates: [0mclassroom-qa.codingninjas.com
-[91mSSL Certificates: [0mtest-landing.codingninjas.com
-[91mSSL Certificates: [0mcareercamp.codingninjas.com
-[91mSSL Certificates: [0mps-staging.codingninjas.com
-[91mSSL Certificates: [0mcampus-help.codingninjas.com
-[91mSSL Certificates: [0mbootcamp.codingninjas.com
-[91mSSL Certificates: [0mcareercamp-staging.codingninjas.com
-[91mSSL Certificates: [0mclassroom-infra.codingninjas.com
-[91mSSL Certificates: [0mclassroom-v3.codingninjas.com
-[91mSSL Certificates: [0mcodestudio-firebase.codingninjas.com
-[91mSSL Certificates: [0mcodestudio-infra.codingninjas.com
-[91mSSL Certificates: [0mcodestudio-staging-extended-demo.codingninjas.com
-[91mSSL Certificates: [0mlanding-infra.codingninjas.com
-[91mSSL Certificates: [0mtest-landing-2.codingninjas.com
-[91mSSL Certificates: [0mcampus.codingninjas.com
-[91mSSL Certificates: [0mps-demo.codingninjas.com
-[91mSSL Certificates: [0manalytics.codingninjas.com
-[91mSSL Certificates: [0mps-internal.codingninjas.com
-[91mSSL Certificates: [0mindustry-mentors.codingninjas.com
-[91mSSL Certificates: [0mim-staging.codingninjas.com
-[91mSSL Certificates: [0mclassroom-growth.codingninjas.com
-[91mSSL Certificates: [0mclassroom-staging.codingninjas.com
-[91mSSL Certificates: [0maz-skill360-staging-1.codingninjas.com
-[91mSSL Certificates: [0maz-infra-staging-1.codingninjas.com
-[91mSSL Certificates: [0maz-cns-staging-1.codingninjas.com
-[91mSSL Certificates: [0maz-cns-staging-2.codingninjas.com
-[91mSSL Certificates: [0maz-cns-staging-3.codingninjas.com
-[91mSSL Certificates: [0maz-growth-staging-1.codingninjas.com
-[91mSSL Certificates: [0maz-growth-staging-2.codingninjas.com
-[91mSSL Certificates: [0maz-growth-staging-3.codingninjas.com
-[91mSSL Certificates: [0maz-se-staging-1.codingninjas.com
-[91mSSL Certificates: [0maz-se-staging-2.codingninjas.com
-[91mSSL Certificates: [0mvideo-session-staging.codingninjas.com
-[91mSSL Certificates: [0mhydrasense.codingninjas.com
-[91mSSL Certificates: [0mautocomplete.codingninjas.com
-[91mSSL Certificates: [0mjunior.codingninjas.com
-[91mSSL Certificates: [0mplayground.codingninjas.com
-[91mSSL Certificates: [0mbullet-train.codingninjas.com
-[91mSSL Certificates: [0mprofile-staging.codingninjas.com
-[91mSSL Certificates: [0mprofile.codingninjas.com
-[91mSSL Certificates: [0mtest-mentors.codingninjas.com
-[91mSSL Certificates: [0mn8n.codingninjas.com
-[91mSSL Certificates: [0maz-ninjasio-staging.codingninjas.com
-[91mSSL Certificates: [0maz-landing.codingninjas.com
-[91mSSL Certificates: [0maz-sandbox-main-ag.codingninjas.com
-[91mSSL Certificates: [0mfiles.codingninjas.com
-[91mSSL Certificates: [0mclassroom.codingninjas.com
-[91mSSL Certificates: [0maz-files.codingninjas.com
-[91mSSL Certificates: [0mmongo-monitor.codingninjas.com
-[91mSSL Certificates: [0mjenkins-staging.codingninjas.com
-[91mSSL Certificates: [0mmetabase-generic.codingninjas.com
-[91mSSL Certificates: [0mstaging-tech-varsity-wordpress.codingninjas.com
-[91mSSL Certificates: [0maz-cns-staging-4.codingninjas.com
-[91mSSL Certificates: [0maz-jenkins.codingninjas.com
-[91mSSL Certificates: [0mazure-classroom-2.codingninjas.com
-[91mSSL Certificates: [0mazure-codestudio.codingninjas.com
-[91mSSL Certificates: [0mazure-classroom.codingninjas.com
-[91mSSL Certificates: [0mazure-landing.codingninjas.com
-[91mSSL Certificates: [0mmerchandise.codingninjas.com
-[91mSSL Certificates: [0manother-classroom.codingninjas.com
-[91mSSL Certificates: [0maz-sandbox.codingninjas.com
-[91mSSL Certificates: [0maz-main-staging.codingninjas.com
-[91mSSL Certificates: [0mnew-staging.codingninjas.com
-[91mSSL Certificates: [0manalytics2.codingninjas.com
-[91mSSL Certificates: [0manalytics-sample.codingninjas.com
-[91mSSL Certificates: [0mps-staging2.codingninjas.com
-[91mSSL Certificates: [0maffiliate.codingninjas.com
-[91mSSL Certificates: [0maff.codingninjas.com
-[91mSSL Certificates: [0mplacements.codingninjas.com
-[91mSSL Certificates: [0mcodezen.codingninjas.com
-[91mSSL Certificates: [0mcdn.codingninjas.com
-[91mSSL Certificates: [0mtest-captaincoder.codingninjas.com
-[91mSSL Certificates: [0mtest-teacher-captaincoder.codingninjas.com
-[91mSSL Certificates: [0mtest-junior.codingninjas.com
-[91mSSL Certificates: [0mjunior-test.codingninjas.com
-[91mSSL Certificates: [0mmentor.codingninjas.com
-[91mSSL Certificates: [0mmeet-test.codingninjas.com
-[93m[-] Total Unique Subdomains Found: 78[0m
-[92maff.codingninjas.com[0m
-[92maffiliate.codingninjas.com[0m
-[92manalytics.codingninjas.com[0m
-[92manalytics-sample.codingninjas.com[0m
-[92manalytics2.codingninjas.com[0m
-[92manother-classroom.codingninjas.com[0m
-[92mautocomplete.codingninjas.com[0m
-[92maz-cns-staging-1.codingninjas.com[0m
-[92maz-cns-staging-2.codingninjas.com[0m
-[92maz-cns-staging-3.codingninjas.com[0m
-[92maz-cns-staging-4.codingninjas.com[0m
-[92maz-files.codingninjas.com[0m
-[92maz-growth-staging-1.codingninjas.com[0m
-[92maz-growth-staging-2.codingninjas.com[0m
-[92maz-growth-staging-3.codingninjas.com[0m
-[92maz-infra-staging-1.codingninjas.com[0m
-[92maz-jenkins.codingninjas.com[0m
-[92maz-landing.codingninjas.com[0m
-[92maz-main-staging.codingninjas.com[0m
-[92maz-ninjasio-staging.codingninjas.com[0m
-[92maz-sandbox.codingninjas.com[0m
-[92maz-sandbox-main-ag.codingninjas.com[0m
-[92maz-sandbox-main-staging.codingninjas.com[0m
-[92maz-se-staging-1.codingninjas.com[0m
-[92maz-se-staging-2.codingninjas.com[0m
-[92maz-skill360-staging-1.codingninjas.com[0m
-[92mazure-classroom.codingninjas.com[0m
-[92mazure-classroom-2.codingninjas.com[0m
-[92mazure-codestudio.codingninjas.com[0m
-[92mazure-landing.codingninjas.com[0m
-[92mbootcamp.codingninjas.com[0m
-[92mbullet-train.codingninjas.com[0m
-[92mcampus.codingninjas.com[0m
-[92mcampus-help.codingninjas.com[0m
-[92mcareercamp.codingninjas.com[0m
-[92mcareercamp-staging.codingninjas.com[0m
-[92mcdn.codingninjas.com[0m
-[92mclassroom.codingninjas.com[0m
-[92mclassroom-growth.codingninjas.com[0m
-[92mclassroom-infra.codingninjas.com[0m
-[92mclassroom-qa.codingninjas.com[0m
-[92mclassroom-staging.codingninjas.com[0m
-[92mclassroom-v3.codingninjas.com[0m
-[92mcodestudio-firebase.codingninjas.com[0m
-[92mcodestudio-infra.codingninjas.com[0m
-[92mcodestudio-staging-extended-demo.codingninjas.com[0m
-[92mcodezen.codingninjas.com[0m
-[92mfiles.codingninjas.com[0m
-[92mhydrasense.codingninjas.com[0m
-[92mim-staging.codingninjas.com[0m
-[92mindustry-mentors.codingninjas.com[0m
-[92mjenkins-staging.codingninjas.com[0m
-[92mjunior.codingninjas.com[0m
-[92mjunior-test.codingninjas.com[0m
-[92mlanding-infra.codingninjas.com[0m
-[92mmeet-test.codingninjas.com[0m
-[92mmentor.codingninjas.com[0m
-[92mmerchandise.codingninjas.com[0m
-[92mmetabase-generic.codingninjas.com[0m
-[92mmongo-monitor.codingninjas.com[0m
-[92mn8n.codingninjas.com[0m
-[92mnew-staging.codingninjas.com[0m
-[92mplacements.codingninjas.com[0m
-[92mplayground.codingninjas.com[0m
-[92mprofile.codingninjas.com[0m
-[92mprofile-staging.codingninjas.com[0m
-[92mps-demo.codingninjas.com[0m
-[92mps-internal.codingninjas.com[0m
-[92mps-staging.codingninjas.com[0m
-[92mps-staging2.codingninjas.com[0m
-[92mstaging-tech-varsity-wordpress.codingninjas.com[0m
-[92mtest-captaincoder.codingninjas.com[0m
-[92mtest-junior.codingninjas.com[0m
-[92mtest-landing.codingninjas.com[0m
-[92mtest-landing-2.codingninjas.com[0m
-[92mtest-mentors.codingninjas.com[0m
-[92mtest-teacher-captaincoder.codingninjas.com[0m
-[92mvideo-session-staging.codingninjas.com[0m
+aff.codingninjas.com
+affiliate.codingninjas.com
+analytics.codingninjas.com
+analytics-sample.codingninjas.com
+analytics2.codingninjas.com
+another-classroom.codingninjas.com
+autocomplete.codingninjas.com
+az-cns-staging-1.codingninjas.com
+az-cns-staging-2.codingninjas.com
+az-cns-staging-3.codingninjas.com
+az-cns-staging-4.codingninjas.com
+az-files.codingninjas.com
+az-growth-staging-1.codingninjas.com
+az-growth-staging-2.codingninjas.com
+az-growth-staging-3.codingninjas.com
+az-infra-staging-1.codingninjas.com
+az-jenkins.codingninjas.com
+az-landing.codingninjas.com
+az-main-staging.codingninjas.com
+az-ninjasio-staging.codingninjas.com
+az-sandbox.codingninjas.com
+az-sandbox-main-ag.codingninjas.com
+az-sandbox-main-staging.codingninjas.com
+az-se-staging-1.codingninjas.com
+az-se-staging-2.codingninjas.com
+az-skill360-staging-1.codingninjas.com
+azure-classroom.codingninjas.com
+azure-classroom-2.codingninjas.com
+azure-codestudio.codingninjas.com
+azure-landing.codingninjas.com
+bootcamp.codingninjas.com
+bullet-train.codingninjas.com
+campus.codingninjas.com
+campus-help.codingninjas.com
+careercamp.codingninjas.com
+careercamp-staging.codingninjas.com
+cdn.codingninjas.com
+classroom.codingninjas.com
+classroom-growth.codingninjas.com
+classroom-infra.codingninjas.com
+classroom-qa.codingninjas.com
+classroom-staging.codingninjas.com
+classroom-v3.codingninjas.com
+codestudio-firebase.codingninjas.com
+codestudio-infra.codingninjas.com
+codestudio-staging-extended-demo.codingninjas.com
+codezen.codingninjas.com
+files.codingninjas.com
+hydrasense.codingninjas.com
+im-staging.codingninjas.com
+industry-mentors.codingninjas.com
+jenkins-staging.codingninjas.com
+junior.codingninjas.com
+junior-test.codingninjas.com
+landing-infra.codingninjas.com
+meet-test.codingninjas.com
+mentor.codingninjas.com
+merchandise.codingninjas.com
+metabase-generic.codingninjas.com
+mongo-monitor.codingninjas.com
+n8n.codingninjas.com
+new-staging.codingninjas.com
+placements.codingninjas.com
+playground.codingninjas.com
+profile.codingninjas.com
+profile-staging.codingninjas.com
+ps-demo.codingninjas.com
+ps-internal.codingninjas.com
+ps-staging.codingninjas.com
+ps-staging2.codingninjas.com
+staging-tech-varsity-wordpress.codingninjas.com
+test-captaincoder.codingninjas.com
+test-junior.codingninjas.com
+test-landing.codingninjas.com
+test-landing-2.codingninjas.com
+test-mentors.codingninjas.com
+test-teacher-captaincoder.codingninjas.com
+video-session-staging.codingninjas.com
