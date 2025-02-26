@@ -29,7 +29,7 @@ knockpy -d "$domain" | tee "knockpy.txt"
 amass enum -norecursive -d "$domain" -o "amass.txt" 
 
 #combine all Result
-cat *.txt | anew all_subdomains.txt
+cat *.txt | ~/go/bin/anew all_subdomains.txt
 
 
 #subdomain of subdomain
