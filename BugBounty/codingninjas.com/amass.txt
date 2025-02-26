@@ -314,3 +314,9 @@
 [92m16509[0m[94m (ASN)[0m [97m-->[0m [95mannounces[0m [97m-->[0m [92m3.108.0.0/14[0m[94m (Netblock)[0m
 [92m16509[0m[94m (ASN)[0m [97m-->[0m [95mannounces[0m [97m-->[0m [92m3.164.84.0/23[0m[94m (Netblock)[0m
 [92m13335[0m[94m (ASN)[0m [97m-->[0m [95mannounces[0m [97m-->[0m [92m2620:127:f00f::/48[0m[94m (Netblock)[0m
+[92mns-1269.awsdns-30.org[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m205.251.196.245[0m[94m (IPAddress)[0m
+[92mns-1269.awsdns-30.org[0m[94m (FQDN)[0m [97m-->[0m [95maaaa_record[0m [97m-->[0m [92m2600:9000:5304:f500::1[0m[94m (IPAddress)[0m
+[92m205.251.192.0/21[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m205.251.193.225[0m[94m (IPAddress)[0m
+[92m205.251.192.0/21[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m205.251.196.245[0m[94m (IPAddress)[0m
+[92m2600:9000:5300::/45[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m2600:9000:5301:e100::1[0m[94m (IPAddress)[0m
+[92m2600:9000:5300::/45[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m2600:9000:5304:f500::1[0m[94m (IPAddress)[0m
