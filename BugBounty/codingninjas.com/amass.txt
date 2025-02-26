@@ -332,3 +332,10 @@
 [92malt1.aspmx.l.google.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m142.250.157.26[0m[94m (IPAddress)[0m
 [92malt1.aspmx.l.google.com[0m[94m (FQDN)[0m [97m-->[0m [95maaaa_record[0m [97m-->[0m [92m2a00:1450:4010:c1c::1b[0m[94m (IPAddress)[0m
 [92m142.250.157.0/24[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m142.250.157.26[0m[94m (IPAddress)[0m
+[92maspmx.l.google.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m142.250.102.26[0m[94m (IPAddress)[0m
+[92maspmx.l.google.com[0m[94m (FQDN)[0m [97m-->[0m [95maaaa_record[0m [97m-->[0m [92m2607:f8b0:4004:c08::1a[0m[94m (IPAddress)[0m
+[92mps-demo.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m199.36.158.100[0m[94m (IPAddress)[0m
+[92maz-growth-staging-2.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m20.197.5.71[0m[94m (IPAddress)[0m
+[92m2607:f8b0::/32[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m2607:f8b0:4004:c08::1a[0m[94m (IPAddress)[0m
+[92m142.250.102.0/24[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m142.250.102.26[0m[94m (IPAddress)[0m
+[92m15169[0m[94m (ASN)[0m [97m-->[0m [95mannounces[0m [97m-->[0m [92m142.250.102.0/24[0m[94m (Netblock)[0m
