@@ -321,3 +321,7 @@
 [92m2600:9000:5300::/45[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m2600:9000:5301:e100::1[0m[94m (IPAddress)[0m
 [92m2600:9000:5300::/45[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m2600:9000:5304:f500::1[0m[94m (IPAddress)[0m
 [92mcodestudio-firebase.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m199.36.158.100[0m[94m (IPAddress)[0m
+[92maz-se-staging-1.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m20.197.5.71[0m[94m (IPAddress)[0m
+[92mmetabase.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m13.235.109.2[0m[94m (IPAddress)[0m
+[92mmetabase.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m52.66.45.117[0m[94m (IPAddress)[0m
+[92mmetabase.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m13.232.47.230[0m[94m (IPAddress)[0m
