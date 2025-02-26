@@ -10,6 +10,7 @@ output="/home/robin/kali/BugBounty/$domain"
 mkdir -p "$output"
 cd "$output"
 
+pwd
 sleep 100
 
 
