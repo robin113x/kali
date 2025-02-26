@@ -1,0 +1,6 @@
+[1;36mcodingninjas.com[0m ['18.172.78.55', '18.172.78.98', '18.172.78.23', '18.172.78.101']
+http  [301, 'https://www.codingninjas.com/', 'AmazonS3']
+https [301, 'https://www.codingninjas.com/', 'AmazonS3']
+cert  [True, '2025-09-14']
+
+1 domains
