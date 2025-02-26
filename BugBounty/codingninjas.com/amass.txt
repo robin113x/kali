@@ -283,3 +283,16 @@
 [92m15169[0m[94m (ASN)[0m [97m-->[0m [95mannounces[0m [97m-->[0m [92m2607:f8b0::/32[0m[94m (Netblock)[0m
 [92m15169[0m[94m (ASN)[0m [97m-->[0m [95mannounces[0m [97m-->[0m [92m142.250.141.0/24[0m[94m (Netblock)[0m
 [92m15169[0m[94m (ASN)[0m [97m-->[0m [95mannounces[0m [97m-->[0m [92m108.177.98.0/24[0m[94m (Netblock)[0m
+[92mshops.myshopify.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m23.227.38.74[0m[94m (IPAddress)[0m
+[92mshops.myshopify.com[0m[94m (FQDN)[0m [97m-->[0m [95maaaa_record[0m [97m-->[0m [92m2620:127:f00f:e::[0m[94m (IPAddress)[0m
+[92mprofile-staging.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m151.101.65.195[0m[94m (IPAddress)[0m
+[92mprofile-staging.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m151.101.1.195[0m[94m (IPAddress)[0m
+[92maz-files.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95mcname_record[0m [97m-->[0m [92mcodingninjasfiles.azureedge.net[0m[94m (FQDN)[0m
+[92m2607:f8b0::/32[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m2607:f8b0:4023:100b::1a[0m[94m (IPAddress)[0m
+[92m2404:6800:4008::/48[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m2404:6800:4008:c13::1b[0m[94m (IPAddress)[0m
+[92m142.250.157.0/24[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m142.250.157.27[0m[94m (IPAddress)[0m
+[92m23.227.38.0/23[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m23.227.38.74[0m[94m (IPAddress)[0m
+[92m15169[0m[94m (ASN)[0m [97m-->[0m [95mannounces[0m [97m-->[0m [92m2404:6800:4008::/48[0m[94m (Netblock)[0m
+[92m15169[0m[94m (ASN)[0m [97m-->[0m [95mannounces[0m [97m-->[0m [92m142.250.157.0/24[0m[94m (Netblock)[0m
+[92m13335[0m[94m (ASN)[0m [97m-->[0m [95mmanaged_by[0m [97m-->[0m [92mCLOUDFLARENET - Cloudflare, Inc.[0m[94m (RIROrganization)[0m
+[92m13335[0m[94m (ASN)[0m [97m-->[0m [95mannounces[0m [97m-->[0m [92m23.227.38.0/23[0m[94m (Netblock)[0m
