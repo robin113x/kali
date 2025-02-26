@@ -27,7 +27,7 @@ assetfinder -subs-only "$domain" | tee "assetfinder.txt"
 shodanx subdomain -d "$domain" -ra -o "shodanx.txt"
 knockpy -d "$domain" | tee "knockpy.txt"
 amass enum -norecursive -d "$domain" -o "amass.txt" 
-
+wait
 #combine all Result
 cat *.txt | ~/go/bin/anew all_subdomains.txt
 
