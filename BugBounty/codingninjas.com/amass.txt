@@ -243,3 +243,15 @@
 [92m11377[0m[94m (ASN)[0m [97m-->[0m [95mannounces[0m [97m-->[0m [92m167.89.0.0/17[0m[94m (Netblock)[0m
 [92m15169[0m[94m (ASN)[0m [97m-->[0m [95mmanaged_by[0m [97m-->[0m [92mGOOGLE - Google LLC[0m[94m (RIROrganization)[0m
 [92m15169[0m[94m (ASN)[0m [97m-->[0m [95mannounces[0m [97m-->[0m [92m209.85.202.0/24[0m[94m (Netblock)[0m
+[92malt1.aspmx.l.google.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m142.250.157.27[0m[94m (IPAddress)[0m
+[92malt1.aspmx.l.google.com[0m[94m (FQDN)[0m [97m-->[0m [95maaaa_record[0m [97m-->[0m [92m2404:6800:4008:c13::1b[0m[94m (IPAddress)[0m
+[92malt4.aspmx.l.google.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m108.177.98.27[0m[94m (IPAddress)[0m
+[92malt4.aspmx.l.google.com[0m[94m (FQDN)[0m [97m-->[0m [95maaaa_record[0m [97m-->[0m [92m2607:f8b0:4023:100b::1a[0m[94m (IPAddress)[0m
+[92mjunior.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m151.101.1.195[0m[94m (IPAddress)[0m
+[92mjunior.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m151.101.65.195[0m[94m (IPAddress)[0m
+[92maffiliate.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95mcname_record[0m [97m-->[0m [92mcodingninjas.scaleo.app[0m[94m (FQDN)[0m
+[92madmin.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m13.234.98.234[0m[94m (IPAddress)[0m
+[92madmin.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m3.6.231.195[0m[94m (IPAddress)[0m
+[92madmin.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m35.154.192.65[0m[94m (IPAddress)[0m
+[92maz-skill360-staging-1.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m20.197.5.71[0m[94m (IPAddress)[0m
+[92maz-cns-staging-3.codingninjas.com[0m[94m (FQDN)[0m [97m-->[0m [95ma_record[0m [97m-->[0m [92m20.197.5.71[0m[94m (IPAddress)[0m
