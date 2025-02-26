@@ -10,7 +10,7 @@ output="/home/robin/kali/BugBounty/$domain"
 mkdir -p "$output"
 cd "$output"
 
-
+sleep 100
 
 
 echo "********************************Passive Enumeration*********************************************"
