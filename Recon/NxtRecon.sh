@@ -83,7 +83,7 @@ knockpy_enum() {
 # Calling all enumeration steps
 passive_enum
 active_enum
-knockpy_enum
+#knockpy_enum
 bruteforce_enum
 combine_results
 wayback_urls
