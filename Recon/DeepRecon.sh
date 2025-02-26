@@ -11,7 +11,7 @@ mkdir -p "$output"
 cd "$output"
 
 pwd
-sleep 100
+sleep 5
 
 
 echo "********************************Passive Enumeration*********************************************"
