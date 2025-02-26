@@ -52,7 +52,7 @@ bruteforce_enum() {
 # combine results
 combine_results() {
     echo "******************************** Combining All Results ********************************"
-    cat *.txt | anew "all_subdomains.txt"
+    cat *.txt | anew "$domain_all_subdomains.txt"
 }
 
 
@@ -81,9 +81,9 @@ knockpy_enum() {
 }
 
 # Calling all enumeration steps
-passive_enum
-active_enum
-#knockpy_enum
+#passive_enum
+#active_enum
+knockpy_enum
 bruteforce_enum
 combine_results
 wayback_urls
