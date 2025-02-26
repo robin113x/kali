@@ -29,7 +29,7 @@ knockpy -d "$domain" | tee "knockpy.txt"
 amass enum -norecursive -d "$domain" -o "amass.txt" 
 wait
 #combine all Result
-cat *.txt | ~/go/bin/anew all_subdomains.txt
+cat *.txt | anew all_subdomains.txt
 
 
 #subdomain of subdomain
@@ -38,7 +38,7 @@ altdns -i all_subdomains.txt -o data_output -w /usr/share/wordlist/words.txt -r 
 
 
 echo "**********waybackurls & waybackrobots ******************"
-~/go/bin/waybackrobots -d "$domain" | tee "waybackrobots.txt"
-cat domains.txt |  ~/go/bin/waybackurls |tee  urls_wayback.txt
+waybackrobots -d "$domain" | tee "waybackrobots.txt"
+cat domains.txt |  waybackurls |tee  urls_wayback.txt
 
 
