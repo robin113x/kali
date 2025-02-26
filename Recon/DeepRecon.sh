@@ -31,6 +31,7 @@ assetfinder -subs-only "$domain" | tee "assetfinder.txt"
 shodanx subdomain -d "$domain" -ra -o "shodanx.txt"
 knockpy -d "$domain" | tee "knockpy.txt"
 amass enum -norecursive -d "$domain" -o "amass.txt" 
+ subrute
 wait
 
 
