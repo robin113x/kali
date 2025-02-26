@@ -7,7 +7,7 @@ if [ "$#" -ne 1 ]; then
 fi
 
 domain=$1
-output="/home/robin/kali/BugBounty$domain"
+output="/home/robin/kali/BugBounty/$domain"
 mkdir -p "$output"
 cd "$output" || { echo "Failed to create/cd to directory"; exit 1; }
 
