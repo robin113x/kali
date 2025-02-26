@@ -346,3 +346,5 @@
 [92m2a00:1450:4010::/48[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m2a00:1450:4010:c1c::1b[0m[94m (IPAddress)[0m
 [92m0[0m[94m (ASN)[0m [97m-->[0m [95mmanaged_by[0m [97m-->[0m [92mUnknown[0m[94m (RIROrganization)[0m
 [92m0[0m[94m (ASN)[0m [97m-->[0m [95mannounces[0m [97m-->[0m [92m2a00:1450:4010::/48[0m[94m (Netblock)[0m
+[92m2404:6800:4003::/48[0m[94m (Netblock)[0m [97m-->[0m [95mcontains[0m [97m-->[0m [92m2404:6800:4003:c02::79[0m[94m (IPAddress)[0m
+[92m15169[0m[94m (ASN)[0m [97m-->[0m [95mannounces[0m [97m-->[0m [92m2404:6800:4003::/48[0m[94m (Netblock)[0m
