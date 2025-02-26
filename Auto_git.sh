@@ -12,7 +12,7 @@ while true; do
         echo "Changes detected. Pulling, committing, and pushing..."
         
         # Handle pull safely
-        git pull --rebase || { echo "Git pull failed. Resolve conflicts manually."; exit 1; }
+        git pull  || { echo "Git pull failed. Resolve conflicts manually."; exit 1; }
         
         git add -A
         git commit -m "Auto-commit: $(date +'%Y-%m-%d %H:%M:%S')"
