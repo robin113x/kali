@@ -21,3 +21,4 @@
 [92m[-] Searching now in SSL Certificates..[0m
 [92m[-] Searching now in PassiveDNS..[0m
 [91m[!] Error: Virustotal probably now is blocking our requests[0m
+[92m[-] Starting bruteforce module now using subbrute..[0m
