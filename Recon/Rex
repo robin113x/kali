@@ -242,7 +242,7 @@ site="URL"; gau "$site" | while read url; do target=$(curl -sIH "Origin: https:/
 
 ffuf -c -u URL -H "Host: FUZZ" -w FILE.txt 
 ### Recon Using api.recon.dev
-
+> @z0idsec
 
 curl -s -w "\n%{http_code}" https://api.recon.dev/search?domain=HOST | jg .[].domain
 ### Find Live Host/Domain/Assets
