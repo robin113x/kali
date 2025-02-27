@@ -7,4 +7,4 @@ CNAME   :   Host Name to HostName
 MX      :   Route outing mails to mail Service
 TXT     :   Sender policy framework, DKIM, DMARC
 AAAA    :   HostName & Its corresponding IPv6 Add.
-SRV     :   
+SRV     :   like MX but
