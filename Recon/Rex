@@ -235,7 +235,7 @@ curl -s https://HOST/v2/swagger.json | jq '.paths | keys[]'
 ### CORS Misconfiguration
 
 
-𝙇𝙤𝙨𝙩𝙨𝙚𝙘, [30-10-2024 07:23 AM]
+
 site="URL"; gau "$site" | while read url; do target=$(curl -sIH "Origin: https://evil.com" -X GET $url) | if grep 'https://evil.com'; then [Potentional CORS Found] echo $url; else echo Nothing on "$url"; fi; done
 ### Find Hidden Servers and/or Admin Panels
 > @rez0__
