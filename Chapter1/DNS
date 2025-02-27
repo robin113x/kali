@@ -8,5 +8,5 @@ MX      :   Routes outgoing mails to mail servers
 TXT     :   Used to hold arbitrary text information, often for email validation purposes such as Sender Policy Framework (SPF), DomainKeys Identified Mail (DKIM), and Domain-based Message Authentication, Reporting, and Conformance (DMARC)
 AAAA    :   Maps a domain name to its corresponding IPv6 address
 SRV     :   Like MX but for other communication Protocols.
-PTR     :   Provide an IP address and recive a hostname
+PTR     :   Provides a hostname for a given IP address
             (reverse DNS Lookup)**
