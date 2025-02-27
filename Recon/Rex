@@ -75,10 +75,10 @@ one | uniq); done
 
 curl -s "https://rapiddns.io/subdomain/$1?full=1#result" | grep "<td><a" | cut -d '"' -f 2 | grep http | cut -d '/' -f3 | sed 's/#results//g' | sort -u
 ### Get Subdomains from BufferOver.run
-> @\_ayoubfathi\_
+
 
 curl -s https://dns.bufferover.run/dns?q=.HOST.com | jq -r .FDNS_A[] | cut -d',' -f2 | sort -u
-> @AnubhavSingh_
+
 export domain="HOST"; curl "https://tls.bufferover.run/dns?q=$domain" | jq -r .Results'[]' | rev | cut -d ',' -f1 | rev | sort -u | grep "\.$domain"
 ### Get Subdomains from Riddler.io
 
