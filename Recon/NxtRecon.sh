@@ -41,6 +41,7 @@ active_enum() {
     assetfinder --subs-only "$domain" | tee "assetfinder_subdomain.txt"
     shodan search domain:"$domain" | jq -r '.matches[]?.hostnames[]' | sort -u | tee "shodan_subdomain.txt"
     shodanx subdomain -d "$domain" -ra -o "shodanx_subdomain.txt"
+    findomain -t "$domain" -v -o findomain_subdomain.txt 
 }
 
 # Brute-force enumeration
@@ -81,14 +82,14 @@ knockpy_enum() {
 }
 
 # Calling all enumeration steps
-#passive_enum
-#active_enum
+passive_enum
+active_enum
 knockpy_enum
 bruteforce_enum
 combine_results
 wayback_urls
-subdomain_of_subdomain
-combine_results  
+#subdomain_of_subdomain
+#combine_results  
 
 echo "Subdomain enumeration completed. Check results in: $output"
 echo "******************************** End of Enumeration ********************************"
