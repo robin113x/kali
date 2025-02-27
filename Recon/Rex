@@ -81,15 +81,15 @@ curl -s https://dns.bufferover.run/dns?q=.HOST.com | jq -r .FDNS_A[] | cut -d','
 > @AnubhavSingh_
 export domain="HOST"; curl "https://tls.bufferover.run/dns?q=$domain" | jq -r .Results'[]' | rev | cut -d ',' -f1 | rev | sort -u | grep "\.$domain"
 ### Get Subdomains from Riddler.io
-> @pikpikcu
+
 
 curl -s "https://riddler.io/search/exportcsv?q=pld:HOST" | grep -Po "(([\w.-]*)\.([\w]*)\.([A-z]))\w+" | sort -u 
 ### Get Subdomains from VirusTotal
-> @pikpikcu
+
 
 curl -s "https://www.virustotal.com/ui/domains/HOST/subdomains?limit=40" | grep -Po "((http|https):\/\/)?(([\w.-]*)\.([\w]*)\.([A-z]))\w+" | sort -u
 ### Get Subdomain with cyberxplore
-> @pikpikcu
+
 
 curl https://subbuster.cyberxplore.com/api/find?domain=HOST -s | grep -Po "(([\w.-]*)\.([\w]*)\.([A-z]))\w+" 
 ### Get Subdomains from CertSpotter
@@ -97,11 +97,11 @@ curl https://subbuster.cyberxplore.com/api/find?domain=HOST -s | grep -Po "(([\w
 
 curl -s "https://certspotter.com/api/v1/issuances?domain=HOST&include_subdomains=true&expand=dns_names" | jq .[].dns_names | grep -Po "(([\w.-]*)\.([\w]*)\.([A-z]))\w+" | sort -u 
 ### Get Subdomains from Archive
-> @pikpikcu
+
 
 curl -s "http://web.archive.org/cdx/search/cdx?url=*.HOST/*&output=text&fl=original&collapse=urlkey" | sed -e 's_https*://__' -e "s/\/.*//" | sort -u
 ### Get Subdomains from JLDC
-> @pikpikcu
+
 
 curl -s "https://jldc.me/anubis/subdomains/HOST" | grep -Po "((http|https):\/\/)?(([\w.-]*)\.([\w]*)\.([A-z]))\w+" | sort -u
 ### Get Subdomains from securitytrails
