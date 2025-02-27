@@ -5,7 +5,7 @@ DNS Record :
 A       :   Maps a domain name to its corresponding IPv4 address
 CNAME   :   Host Name to HostName
 MX      :   Routes outgoing mails to mail servers
-TXT     :   Sender policy framework, DKIM, DMARC
+TXT     :   Used to hold arbitrary text information, often for email validation purposes such as Sender Policy Framework (SPF), DomainKeys Identified Mail (DKIM), and Domain-based Message Authentication, Reporting, and Conformance (DMARC)
 AAAA    :   HostName & Its corresponding IPv6 Add.
 SRV     :   Like MX but for other communication Protocols.
 PTR     :   Provide an IP address and recive a hostname
