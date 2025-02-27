@@ -154,31 +154,31 @@ cat HOSTS.txt | httprobe | xargs curl | tok | tr '[:upper:]' '[:lower:]' | sort 
 ### Extracts Juicy Informations
 > @Prial Islam Khan
 
-bash
+
 for sub in $(cat HOSTS.txt); do gron "https://otx.alienvault.com/otxapi/indicator/hostname/url_list/$sub?limit=100&page=1" | grep "\burl\b" | gron --ungron | jq | egrep -wi 'url' | awk '{print $2}' | sed 's/"//g'| sort -u | tee -a OUT.txt  ;done
 
 ### Find Subdomains TakeOver
 
 
-bash
+
 subfinder -d HOST >> FILE; assetfinder --subs-only HOST >> FILE; amass enum -norecursive -noalts -d HOST >> FILE; subjack -w FILE -t 100 -timeout 30 -ssl -c $GOPATH/src/github.com/haccer/subjack/fingerprints.json -v 3 >> takeover ; 
 
 ### Dump Custom URLs from ParamSpider
 
 
-bash
+
 cat HOSTS.txt | xargs -I % python3 paramspider.py -l high -o ./OUT/% -d %;
 
 ### URLs Probing with cURL + Parallel
 > @akita_zen
 
-bash
+
 cat HOSTS.txt | parallel -j50 -q curl -w 'Status:%{http_code}\t  Size:%{size_download}\t %{url_effective}\n' -o /dev/null -sk
 
 ### Dump In-scope Assets from `chaos-bugbounty-list`
 > @dwisiswant0
 
-bash
+
 curl -sL https://github.com/projectdiscovery/public-bugbounty-programs/raw/master/chaos-bugbounty-list.json | jq -r '.programs[].domains | to_entries | .[].value'
 
 ### Dump In-scope Assets from `bounty-targets-data`
@@ -186,50 +186,50 @@ curl -sL https://github.com/projectdiscovery/public-bugbounty-programs/raw/maste
 
 #### HackerOne Programs
 
-bash
+
 curl -sL https://github.com/arkadiyt/bounty-targets-data/blob/master/data/hackerone_data.json?raw=true | jq -r '.[].targets.in_scope[] | [.asset_identifier, .asset_type] | @tsv'
 
 #### BugCrowd Programs
 
-bash
+
 curl -sL https://github.com/arkadiyt/bounty-targets-data/raw/master/data/bugcrowd_data.json | jq -r '.[].targets.in_scope[] | [.target, .type] | @tsv'
 
 #### Intigriti Programs
 
-bash
+
 curl -sL https://github.com/arkadiyt/bounty-targets-data/raw/master/data/intigriti_data.json | jq -r '.[].targets.in_scope[] | [.endpoint, .type] | @tsv'
 
 #### YesWeHack Programs
 
-bash
+
 curl -sL https://github.com/arkadiyt/bounty-targets-data/raw/master/data/yeswehack_data.json | jq -r '.[].targets.in_scope[] | [.target, .type] | @tsv'
 
 #### HackenProof Programs
 
-bash
+
 curl -sL https://github.com/arkadiyt/bounty-targets-data/raw/master/data/hackenproof_data.json | jq -r '.[].targets.in_scope[] | [.target, .type, .instruction] | @tsv'
 
 #### Federacy Programs
 
-bash
+
 curl -sL https://github.com/arkadiyt/bounty-targets-data/raw/master/data/federacy_data.json | jq -r '.[].targets.in_scope[] | [.target, .type] | @tsv'
 
 ### Dump URLs from sitemap.xml
 > @healthyoutlet
 
-bash
+
 curl -s http://HOST/sitemap.xml | xmllint --format - | grep -e 'loc' | sed -r 's|</?loc>||g'
 
-### Pure Bash Linkfinder
+### Pure  Linkfinder
 > @ntrzz
 
-bash
+
 curl -s $1 | grep -Eo "(http|https)://[a-zA-Z0-9./?=_-]*" | sort | uniq | grep ".js" > FILE.txt; while IFS= read link; do python linkfinder.py -i "$link" -o cli; done < FILE.txt | grep $2 | grep -v $3 | sort -n | uniq; rm -rf FILE.txt
 
 ### Extract Endpoints from swagger.json
 > @zer0pwn
 
-bash
+
 curl -s https://HOST/v2/swagger.json | jq '.paths | keys[]'
 `
 
@@ -269,4 +269,4 @@ nmap -v0 HOST -oX /dev/stdout | jc --xml -p | jq -r '.nmaprun.host | (.address["
 
 
 
-make this one bash.sh
+make this one .sh
