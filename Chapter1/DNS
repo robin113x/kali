@@ -8,4 +8,4 @@ MX      :   Route outing mails to mail Service
 TXT     :   Sender policy framework, DKIM, DMARC
 AAAA    :   HostName & Its corresponding IPv6 Add.
 SRV     :   like MX but for other communication Protocols.
-PTR     : 
+PTR     : Pro
