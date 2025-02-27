@@ -214,26 +214,26 @@ curl -sL https://github.com/arkadiyt/bounty-targets-data/raw/master/data/hackenp
 curl -sL https://github.com/arkadiyt/bounty-targets-data/raw/master/data/federacy_data.json | jq -r '.[].targets.in_scope[] | [.target, .type] | @tsv'
 
 ### Dump URLs from sitemap.xml
-> @healthyoutlet
+
 
 
 curl -s http://HOST/sitemap.xml | xmllint --format - | grep -e 'loc' | sed -r 's|</?loc>||g'
 
 ### Pure  Linkfinder
-> @ntrzz
+
 
 
 curl -s $1 | grep -Eo "(http|https)://[a-zA-Z0-9./?=_-]*" | sort | uniq | grep ".js" > FILE.txt; while IFS= read link; do python linkfinder.py -i "$link" -o cli; done < FILE.txt | grep $2 | grep -v $3 | sort -n | uniq; rm -rf FILE.txt
 
 ### Extract Endpoints from swagger.json
-> @zer0pwn
+
 
 
 curl -s https://HOST/v2/swagger.json | jq '.paths | keys[]'
-`
+
 
 ### CORS Misconfiguration
-> @manas_hunter
+
 
 𝙇𝙤𝙨𝙩𝙨𝙚𝙘, [30-10-2024 07:23 AM]
 site="URL"; gau "$site" | while read url; do target=$(curl -sIH "Origin: https://evil.com" -X GET $url) | if grep 'https://evil.com'; then [Potentional CORS Found] echo $url; else echo Nothing on "$url"; fi; done
