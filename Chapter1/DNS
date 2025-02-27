@@ -3,7 +3,7 @@ DNS : Domain Name Service / System Port : 53
 DNS Record : 
 
 A       :   Host Name Point to IP
-CNAME   :   Host Name to HostNmae
+CNAME   :   Host Name to HostName
 MX      :   Route outing mails to mail Service
 TXT     :   Sender policy framework, DKIM, DMARC
-AAAA    :   HostName
+AAAA    :   HostName & 
