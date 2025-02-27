@@ -9,4 +9,4 @@ TXT     :   Sender policy framework, DKIM, DMARC
 AAAA    :   HostName & Its corresponding IPv6 Add.
 SRV     :   Like MX but for other communication Protocols.
 PTR     :   Provide an IP address and recive a hostname
-    
+            (rev)
