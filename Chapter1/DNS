@@ -5,4 +5,4 @@ DNS Record :
 A       :   Host Name Point to IP
 CNAME   :   Host Name to HostNmae
 MX      :   Route outing mails to mail Service
-TXT     :   Sender polic
+TXT     :   Sender policy framework, 
