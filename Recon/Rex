@@ -267,4 +267,3 @@ nmap -v0 HOST -oX /dev/stdout | jc --xml -p | jq -r '.nmaprun.host | (.address["
 
 
 
-make this one .sh
