@@ -4,7 +4,7 @@ DNS Record :
 
 A       :   Maps a domain name to its corresponding IPv4 address
 CNAME   :   Host Name to HostName
-MX      :   Route outing mails to mail Service
+MX      :   Routes outgoing mails to mail servers
 TXT     :   Sender policy framework, DKIM, DMARC
 AAAA    :   HostName & Its corresponding IPv6 Add.
 SRV     :   Like MX but for other communication Protocols.
