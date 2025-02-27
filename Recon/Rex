@@ -238,19 +238,18 @@ curl -s https://HOST/v2/swagger.json | jq '.paths | keys[]'
 
 site="URL"; gau "$site" | while read url; do target=$(curl -sIH "Origin: https://evil.com" -X GET $url) | if grep 'https://evil.com'; then [Potentional CORS Found] echo $url; else echo Nothing on "$url"; fi; done
 ### Find Hidden Servers and/or Admin Panels
-> @rez0__
+
 
 ffuf -c -u URL -H "Host: FUZZ" -w FILE.txt 
 ### Recon Using api.recon.dev
-> @z0idsec
+
 
 curl -s -w "\n%{http_code}" https://api.recon.dev/search?domain=HOST | jg .[].domain
 ### Find Live Host/Domain/Assets
-> @_YashGoti_
 
 subfinder -d HOST -silent | httpx -silent -follow-redirects -mc 200 | cut -d '/' -f3 | sort -u
 ### XSS without gf
-> @HacktifyS
+
 
 waybackurls HOST | grep '=' | qsreplace '"><script>alert(1)</script>' | while read host do ; do curl -sk --path-as-is "$host" | grep -qs "<script>alert(1)</script>" && echo "$host is vulnerable"; done
 ### Get Subdomains from IPs
