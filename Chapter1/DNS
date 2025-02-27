@@ -2,5 +2,5 @@ DNS : Domain Name Service / System Port : 53
 
 DNS Record : 
 
-A   :   Host Name Point to IP
-CNAME  
+A       :   Host Name Point to IP
+CNAME   :   H
