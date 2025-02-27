@@ -93,7 +93,7 @@ curl -s "https://www.virustotal.com/ui/domains/HOST/subdomains?limit=40" | grep 
 
 curl https://subbuster.cyberxplore.com/api/find?domain=HOST -s | grep -Po "(([\w.-]*)\.([\w]*)\.([A-z]))\w+" 
 ### Get Subdomains from CertSpotter
-> @caryhooper
+
 
 curl -s "https://certspotter.com/api/v1/issuances?domain=HOST&include_subdomains=true&expand=dns_names" | jq .[].dns_names | grep -Po "(([\w.-]*)\.([\w]*)\.([A-z]))\w+" | sort -u 
 ### Get Subdomains from Archive
