@@ -6,4 +6,4 @@ A       :   Host Name Point to IP
 CNAME   :   Host Name to HostNmae
 MX      :   Route outing mails to mail Service
 TXT     :   Sender policy framework, DKIM, DMARC
-AAA
+AAAA    :   
