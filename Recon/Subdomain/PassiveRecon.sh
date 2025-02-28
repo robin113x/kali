@@ -11,6 +11,4 @@ passive_enum
 wait
 echo "******************************** Passive Enumeration Completed ********************************"
 echo "******************************** Subdomain Enumeration Completed ********************************"
-echo "******************************** Starting Subdomain Enumeration ********************************"
-echo "******************************** Starting Subdomain Enumeration ********************************"
-echo "******************************** Starting Subdomain Enumeration ********************************" 
+    
