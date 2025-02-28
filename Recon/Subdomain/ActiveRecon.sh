@@ -1,4 +1,4 @@
-WORDLIST="/usr/share/wordlist/n0kovo_subdomains/n0kovo_subdomains_large.txt"
+WORDLIST="     "
 
 # Active enumeration
 active_enum() {
@@ -26,7 +26,7 @@ bruteforce_enum() {
 
 knockpy_enum() {
     echo "******************************** Running Knockpy ********************************"
-    knockpy -d "$DOMAIN" --recon --save report --json
+    knockpy -d "$DOMAIN" --recon --sa     ve report --json
     grep '"domain"' "report/{domain}"*.json | awk -F'"' '{print $4}' | tee "knockpy_subdomain.txt"
 
 }
