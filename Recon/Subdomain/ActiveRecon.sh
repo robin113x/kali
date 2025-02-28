@@ -21,5 +21,6 @@ bruteforce_enum() {
     gobuster dns -d "$domain" -w /usr/share/wordlist/n0kovo_subdomains/n0kovo_subdomains_large.txt -o gobuster_subdomain.txt
     altdns -i "passive_subs.txt" -o "altdns_subs.txt" -w "$WORDLIST"
     knockpy -d "$domain" --recon | tee "knockpy_subdomain.txt"
+    
 
 }
