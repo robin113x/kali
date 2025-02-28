@@ -30,3 +30,4 @@ knockpy_enum() {
 }
 
 active_enum
+knockpy_enum
