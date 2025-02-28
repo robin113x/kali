@@ -18,7 +18,7 @@ active_enum() {
 bruteforce_enum() {
     echo "******************************** Bruteforce Enumeration ********************************"
     subrute -d "$DOMAIN" | tee "subbrute_subdomain.txt"
-    gobuster dns -d "$DOMAIN" -w /usr/share/wordlist/n0kovo_subdomains/n0kovo_subdomains_large.txt -o gobuster_subdomain.txt
+    gobuster dns -d "$DOMAIN" -w  -o gobuster_subdomain.txt
    
 }
 
