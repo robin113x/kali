@@ -7,7 +7,7 @@ OUTPUT_DIR="results/$DOMAIN"
 LOG_FILE="recon.log"
 NUCLEI_TEMPLATES="/root/nuclei-templates
 SHODAN_API=$SHODAN_API_KEY
-CHAOS_API=
+CHAOS_API=$PDCP_API_KEY
 CENSYS_API
 WORDLIST="/usr/share/wordlist/n0kovo_subdomains/n0kovo_subdomains_large.txt"
 DNS_RESOLVER="/usr/share/wordlist/resolvers.txt"
