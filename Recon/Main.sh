@@ -32,7 +32,9 @@ if [ $choice == "y" ]; then
     echo "[+] Starting Active Enumeration on $DOMAIN"
     bash Subdomain/ActiveRecon.sh $DOMAIN
     exit 0
-
+else
+    echo "[+] Exiting..."
+    exit 0
 fi  
 
 
