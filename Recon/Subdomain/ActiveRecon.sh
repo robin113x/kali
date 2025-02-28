@@ -31,3 +31,4 @@ knockpy_enum() {
 
 active_enum
 knockpy_enum
+bruteforce_enum
