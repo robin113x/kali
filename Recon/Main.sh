@@ -25,7 +25,7 @@ log "[+] Starting Advanced Recon on $DOMAIN"
 echo "[+] Starting Passive Recon on $DOMAIN"
 
 # Passive enumeration
-bash Subdomain/PassiveRecon.sh $DOMAIN
+
 
 read -p "Are you ready to start Passive Enumeration? (y/n): " choice
 if [ $choice == "y" ]; then
