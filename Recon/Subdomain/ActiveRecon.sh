@@ -4,7 +4,7 @@ active_enum() {
     subfinder -d "$DOMAIN" -all -recursive -o "subfinder_subdomain.txt"
     assetfinder --subs-only "$DOMAIN" | tee "assetfinder_subdomain.txt"
     shodan search domain:"$DOMAIN" | jq -r '.matches[]?.hostnames[]' | sort -u | tee "shodan_subdomain.txt"
-    shodanx subdomain -d "$DOMAIN" -ra -o "OUTPUT_DIR/shodanx_subdomain.txt"
+    shodanx subdomain -d "$DOMAIN" -ra -o "$OUTPUT_DIR/shodanx_subdomain.txt"
     findomain -t "$DOMAIN" -v -o findomain_subdomain.txt
     amass enum -norecursive  -d "$DOMAIN" -o amass_subdomain.txt
     anubis -d "$DOMAIN" -o "anubis_subs.txt" 
