@@ -27,6 +27,6 @@ echo "[+] Starting Passive Recon on $DOMAIN"
 # Passive enumeration
 bash Subdomain/PassiveRecon.sh $DOMAIN
 
-read -p 
+read -p "Press "
 # Active enumeration
 bash Subdomain/ActiveRecon.sh $DOMAIN
