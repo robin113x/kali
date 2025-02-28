@@ -22,3 +22,4 @@ passive_enum() {
     curl -s "https://api.certspotter.com/v1/issuances?domain=$DOMAIN&include_subdomains=true&expand=dns_names" | jq -r '.[].dns_names[]' | sort -u | tee "certspotter_passive.txt"
     
 }
+passive_enum
