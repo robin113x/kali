@@ -22,3 +22,9 @@ bruteforce_enum() {
     altdns -i "passive_subs.txt" -o "altdns_subs.txt" -w "$WORDLIST"
    
 }
+
+knockpy_enum() {
+    echo "******************************** Running Knockpy ********************************"
+    knockpy -d "<span class="math-inline">domain" \-\-recon \-\-save report \-\-json
+grep '"domain"' "report/</span>{domain}"*.json | awk -F'"' '{print $4}' | tee "knockpy_subdomain.txt"
+}
