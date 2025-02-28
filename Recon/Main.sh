@@ -14,6 +14,7 @@ DNS_RESOLVER="/usr/share/wordlist/resolvers.txt"
 
 # Ensure output directory exists
 mkdir -p "$OUTPUT_DIR" && touch "$LOG_FILE"
+
 log() {
     echo "$(date +'%Y-%m-%d %H:%M:%S') - $1" | tee -a "$LOG_FILE"
 }
