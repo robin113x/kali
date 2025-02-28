@@ -8,3 +8,4 @@ passive_enum() {
 }
 
 passive_enum
+wait
