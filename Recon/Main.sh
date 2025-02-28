@@ -5,7 +5,7 @@ DOMAIN="$1"
 echo "Domain: $DOMAIN"
 OUTPUT_DIR="results/$DOMAIN"
 LOG_FILE="recon.log"
-NUCLEI_TEMPLATES="/root/nuclei-templates
+NUCLEI_TEMPLATES="/root/nuclei-templates"
 SHODAN_API=$SHODAN_API_KEY
 CHAOS_API=$PDCP_API_KEY
 WORDLIST="/usr/share/wordlist/n0kovo_subdomains/n0kovo_subdomains_large.txt"
