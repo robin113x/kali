@@ -23,3 +23,6 @@ log() {
 
 log "[+] Starting Advanced Recon on $DOMAIN"
 echo "[+] Starting Passive Recon on $DOMAIN"
+
+# Passive enumeration
+ba
