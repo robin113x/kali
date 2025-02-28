@@ -14,7 +14,7 @@ DNS_RESOLVER="/usr/share/wordlist/resolvers.txt"
 
 # Ensure output directory exists
 mkdir -p "$OUTPUT_DIR" && touch "$LOG_FILE"
-cd $OUTPUT_DIR
+
 pwd
 
 log() {
