@@ -3,7 +3,7 @@
 # Configuration
 DOMAIN="$1"
 echo "Domain: $DOMAIN"
-OUTPUT_DIR="results/$DOMAIN"
+OUTPUT_DIR="/home/robin/kali/BugBounty/results/$DOMAIN"
 LOG_FILE="recon.log"
 NUCLEI_TEMPLATES="/root/nuclei-templates"
 SHODAN_API="$SHODAN_API_KEY"
