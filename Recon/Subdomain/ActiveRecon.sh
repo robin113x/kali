@@ -13,3 +13,10 @@ active_enum() {
     dnsrecon -d "$DOMAIN" -D "$WORDLIST" -t brt -n "$DNS_RESOLVER" -o "dnsrecon_subs.txt"
 
 }
+
+# Brute-force enumeration
+bruteforce_enum() {
+    echo "******************************** Bruteforce Enumeration ********************************"
+    subrute -d "$domain" | tee "subbrute_subdomain.txt"
+    gobuster dns -d "$domain" -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt -o gobuster_subdomain.txt
+}
