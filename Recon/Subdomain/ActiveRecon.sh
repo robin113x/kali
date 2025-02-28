@@ -12,7 +12,6 @@ active_enum() {
     anubis -d "$DOMAIN" -o "anubis_subs.txt" 
     chaos -d "$DOMAIN" -k "$CHAOS_KEY" -o "chaos_subs.txt" 
     sublist3r -d "$DOMAIN" -o "sublist3r_subs.txt" 
-    dnsrecon -d "$DOMAIN" -D "$WORDLIST" -t brt -n "$DNS_RESOLVER" -o "dnsrecon_subs.txt"
 
 }
 
@@ -21,6 +20,7 @@ bruteforce_enum() {
     echo "******************************** Bruteforce Enumeration ********************************"
     subrute -d "$DOMAIN" | tee "subbrute_subdomain.txt"
     gobuster dns -d "$DOMAIN" -w "$WORDLIST" -o gobuster_subdomain.txt
+    dnsrecon -d "$DOMAIN" -D "$WORDLIST" -t brt -n "$DNS_RESOLVER" -o "dnsrecon_subs.txt"
    
 }
 
