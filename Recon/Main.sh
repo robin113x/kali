@@ -28,7 +28,7 @@ read -p "Are you ready to start Passive Enumeration? (y/n):: " choice
 if [ $choice == "y" ]; then
     echo "[+] Starting Active Enumeration on $DOMAIN"
     chmod +x Subdomain/PassiveRecon.sh
-    bash Subdomain/PassiveRecon2.sh $DOMAIN
+    bash Subdomain/PassiveRecon.sh $DOMAIN
     exit 0
 else
     echo "[+] Exiting..."
