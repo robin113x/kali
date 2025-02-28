@@ -29,3 +29,4 @@ knockpy_enum() {
 
 }
 
+active_enum
