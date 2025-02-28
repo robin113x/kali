@@ -2,4 +2,5 @@
 
 # Configuration
 DOMAIN="$1"
-echo 
+echo "Domain: $DOMAIN"
+OUTPUT_DIR="results/$DOMAIN"
