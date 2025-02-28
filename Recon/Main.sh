@@ -37,4 +37,14 @@ else
     exit 0
 fi  
 
+read -p "Are you ready to start Active Enumeration? (y/n): " choice
+if [ $choice == "y" ]; then
+    echo "[+] Starting Active Enumeration on $DOMAIN"
+    bash Subdomain/ActiveRecon.sh $DOMAIN
+    exit 0
+else
+    echo "[+] Exiting..."
+    exit 0
+fi  
+
 
