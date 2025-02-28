@@ -1,3 +1,5 @@
+/usr/share/wordlist/n0kovo_subdomains/n0kovo_subdomains_large.txt
+
 # Active enumeration
 active_enum() {
     echo "******************************** Active Enumeration ********************************"
