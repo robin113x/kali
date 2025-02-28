@@ -7,16 +7,16 @@ active_enum() {
     shodanx subdomain -d "$DOMAIN" -ra -o "$OUTPUT_DIR/shodanx_subdomain.txt"
     findomain -t "$DOMAIN" -v -o $OUTPUT_DIR/findomain_subdomain.txt
     amass enum -norecursive  -d "$DOMAIN" -o $OUTPUT_DIR/amass_subdomain.txt
-    anubis -d "$DOMAIN" -o "anubis_subs.txt" 
-    chaos -d "$DOMAIN" -k "$CHAOS_KEY" -o "chaos_subs.txt" 
-    sublist3r -d "$DOMAIN" -o "sublist3r_subs.txt" 
+    anubis -d "$DOMAIN" -o "$OUTPUT_DIR/anubis_subs.txt" 
+    chaos -d "$DOMAIN" -k "$CHAOS_KEY" -o "$OUTPUT_DIR/chaos_subs.txt" 
+    sublist3r -d "$DOMAIN" -o "$OUTPUT_DIR/sublist3r_subs.txt" 
 
 }
 
 # Brute-force enumeration
 bruteforce_enum() {
     echo "******************************** Bruteforce Enumeration ********************************"
-    subrute -d "$DOMAIN" | tee "subbrute_subdomain.txt"
+    subrute -d "$DOMAIN" | tee "$OUTPUT_DIR/subbrute_subdomain.txt"
     gobuster dns -d "$DOMAIN" -w "$WORDLIST" -o gobuster_subdomain.txt
     dnsrecon -d "$DOMAIN" -D "$WORDLIST" -t brt -n "$DNS_RESOLVER" -o "dnsrecon_subs.txt"
    
