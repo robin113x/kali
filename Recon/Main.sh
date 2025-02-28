@@ -2,7 +2,7 @@
 
 # Configuration
 DOMAIN="$1"
-domain
+domain="$1"
 echo "Domain: $DOMAIN"
 OUTPUT_DIR="/home/robin/kali/BugBounty/results/$DOMAIN"
 LOG_FILE="recon.log"
