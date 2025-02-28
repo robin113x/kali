@@ -1,5 +1,3 @@
-
-
 # Active enumeration
 active_enum() {
     echo "******************************** Active Enumeration ********************************"
@@ -30,3 +28,4 @@ knockpy_enum() {
     grep '"domain"' "report/{domain}"*.json | awk -F'"' '{print $4}' | tee "knockpy_subdomain.txt"
 
 }
+
