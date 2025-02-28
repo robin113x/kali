@@ -29,8 +29,9 @@ bash Subdomain/PassiveRecon.sh $DOMAIN
 
 read -p "Are you ready to start Active Enumeration? (y/n): " choice
 if [ $choice == "y" ]; then
+# Active enumeration
+bash Subdomain/ActiveRecon.sh $DOMAIN
     exit 1
 fi  
 
-# Active enumeration
-bash Subdomain/ActiveRecon.sh $DOMAIN
+
