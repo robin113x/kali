@@ -25,7 +25,7 @@ bruteforce_enum() {
 knockpy_enum() {
     echo "******************************** Running Knockpy ********************************"
     knockpy -d "$DOMAIN" --recon --save report --json
-    grep '"domain"' "report/{domain}"*.json | awk -F'"' '{print $4}' | tee "knockpy_subdomain.txt"
+    grep '"domain"' "report/{domain}"*.json | awk -F'"' '{print $4}' | tee "$OUTPUT_DIR/knockpy_subdomain.txt"
 
 }
 
