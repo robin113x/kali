@@ -24,7 +24,7 @@ log() {
 log "[+] Starting Advanced Recon on $DOMAIN"
 echo "[+] Starting Passive Recon on $DOMAIN"
 
-# Passive enumeration
+# Passive Enumeration
 read -p "Are you ready to start Passive Enumeration? (y/n): " choice
 if [ $choice == "y" ]; then
     echo "[+] Starting Active Enumeration on $DOMAIN"
@@ -35,7 +35,7 @@ else
     exit 0
 fi  
 
-# Passive enumeration
+# Active Enumeration
 read -p "Are you ready to start Active Enumeration? (y/n): " choice
 if [ $choice == "y" ]; then
     echo "[+] Starting Active Enumeration on $DOMAIN"
