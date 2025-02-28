@@ -1,7 +1,7 @@
 # Active enumeration
 active_enum() {
     echo "******************************** Active Enumeration ********************************"
-    subfinder -d "$DOMAIN" -all -recursive -o "subfinder_subdomain.txt"
+    subfinder -d "$DOMAIN" -all -recursive -o "$OUTPUT_DIR/subfinder_subdomain.txt"
     assetfinder --subs-only "$DOMAIN" | tee "assetfinder_subdomain.txt"
     shodan search domain:"$DOMAIN" | jq -r '.matches[]?.hostnames[]' | sort -u | tee "shodan_subdomain.txt"
     shodanx subdomain -d "$DOMAIN" -ra -o "$OUTPUT_DIR/shodanx_subdomain.txt"
