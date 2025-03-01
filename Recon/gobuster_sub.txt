@@ -1,0 +1,152 @@
+[32mFound: [0m[32mstatic.snapchat.com
+[0m
+[32mFound: [0m[32mwww.snapchat.com
+[0m
+[32mFound: [0m[32mcdn.snapchat.com
+[0m
+[32mFound: [0m[32massets.snapchat.com
+[0m
+[32mFound: [0m[32mapp.snapchat.com
+[0m
+[32mFound: [0m[32mimage.email.snapchat.com
+[0m
+[32mFound: [0m[32ms.snapchat.com
+[0m
+[32mFound: [0m[32mlogin.snapchat.com
+[0m
+[32mFound: [0m[32msearch.snapchat.com
+[0m
+[32mFound: [0m[32mstore.snapchat.com
+[0m
+[32mFound: [0m[32mapi.snapchat.com
+[0m
+[32mFound: [0m[32mmy.snapchat.com
+[0m
+[32mFound: [0m[32mauth.snapchat.com
+[0m
+[32mFound: [0m[32mhelp.snapchat.com
+[0m
+[32mFound: [0m[32maccounts.snapchat.com
+[0m
+[32mFound: [0m[32msupport.snapchat.com
+[0m
+[32mFound: [0m[32mdeveloper.snapchat.com
+[0m
+[32mFound: [0m[32mweb.snapchat.com
+[0m
+[32mFound: [0m[32msurvey.snapchat.com
+[0m
+[32mFound: [0m[32mpartners.snapchat.com
+[0m
+[32mFound: [0m[32mprofile.snapchat.com
+[0m
+[32mFound: [0m[32memail.snapchat.com
+[0m
+[32mFound: [0m[32mads.snapchat.com
+[0m
+[32mFound: [0m[32mevents.snapchat.com
+[0m
+[32mFound: [0m[32mmaps.snapchat.com
+[0m
+[32mFound: [0m[32mdevelopers.snapchat.com
+[0m
+[32mFound: [0m[32mtr.snapchat.com
+[0m
+[32mFound: [0m[32mshare.snapchat.com
+[0m
+[32mFound: [0m[32mmap.snapchat.com
+[0m
+[32mFound: [0m[32mai.snapchat.com
+[0m
+[32mFound: [0m[32mregistry.snapchat.com
+[0m
+[32mFound: [0m[32mwallet.snapchat.com
+[0m
+[32mFound: [0m[32mgames.snapchat.com
+[0m
+[32mFound: [0m[32mclick.snapchat.com
+[0m
+[32mFound: [0m[32msession.snapchat.com
+[0m
+[32mFound: [0m[32mview.email.snapchat.com
+[0m
+[32mFound: [0m[32mcloud.email.snapchat.com
+[0m
+[32mFound: [0m[32mpartnership.snapchat.com
+[0m
+[32mFound: [0m[32morigin-client.legacy-app.games.snapchat.com
+[0m
+[32mFound: [0m[32mgamma.client.legacy-app.games.snapchat.com
+[0m
+[32mFound: [0m[32mcdn.stg.ats.snapchat.com
+[0m
+[32mFound: [0m[32mcdn.dev3.ats.snapchat.com
+[0m
+[32mFound: [0m[32mcdn.dev1.ats.snapchat.com
+[0m
+[32mFound: [0m[32mapi.games.snapchat.com
+[0m
+[32mFound: [0m[32mparents.snapchat.com
+[0m
+[32mFound: [0m[32mkit.snapchat.com
+[0m
+[32mFound: [0m[32mrsp.snapchat.com
+[0m
+[32mFound: [0m[32mlens.snapchat.com
+[0m
+[32mFound: [0m[32mperception.snapchat.com
+[0m
+[32mFound: [0m[32mstg.games.snapchat.com
+[0m
+[32mFound: [0m[32mweb-prod.snapchat.com
+[0m
+[32mFound: [0m[32mcalling.snapchat.com
+[0m
+[32mFound: [0m[32mgroove.snapchat.com
+[0m
+[32mFound: [0m[32mbusinessapi.snapchat.com
+[0m
+[32mFound: [0m[32maws.duplex.snapchat.com
+[0m
+[32mFound: [0m[32maws.api.snapchat.com
+[0m
+[32mFound: [0m[32msidecar.ats.snapchat.com
+[0m
+[32mFound: [0m[32mpro-accounts.snapchat.com
+[0m
+[32mFound: [0m[32mdraco.ats.snapchat.com
+[0m
+[32mFound: [0m[32mtopic-sticker-vending-us-east-1.snapchat.com
+[0m
+[32mFound: [0m[32mstore.games.snapchat.com
+[0m
+[32mFound: [0m[32mstg-store.games.snapchat.com
+[0m
+[32mFound: [0m[32mservice.identity.us-east-1.social.games.snapchat.com
+[0m
+[32mFound: [0m[32mmail.games.snapchat.com
+[0m
+[32mFound: [0m[32mapi.dev.games.snapchat.com
+[0m
+[32mFound: [0m[32mam-api.snapchat.com
+[0m
+[32mFound: [0m[32madmin.games.snapchat.com
+[0m
+[32mFound: [0m[32mtest.games.snapchat.com
+[0m
+[32mFound: [0m[32mns2.ats.snapchat.com
+[0m
+[32mFound: [0m[32mdominations.games.snapchat.com
+[0m
+[32mFound: [0m[32mclient.maestro.gamma.us-east-1.social.games.snapchat.com
+[0m
+[32mFound: [0m[32madventurous.us-west-2.dev.spam.games.snapchat.com
+[0m
+[32mFound: [0m[32mwww.intg.snapchat.com
+[0m
+[32mFound: [0m[32mus-east.dev.lostark.games.snapchat.com
+[0m
+[32mFound: [0m[32mus-east-1.story-studio.snapchat.com
+[0m
+[32mFound: [0m[32mstaging.ats.snapchat.com
+[0m
