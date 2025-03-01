@@ -50,7 +50,7 @@ if [ $choice == "y" ]; then
     shodanx subdomain -d "$DOMAIN" -ra -o "$OUTPUT_DIR/shodanx_subdomain.txt"
     findomain -t "$DOMAIN" -v -u $OUTPUT_DIR/findomain_subdomain.txt
     wait
-    anubis -d "$DOMAIN" -o "$OUTPUT_DIR/anubis_subs.txt" 
+    anubis -t "$DOMAIN" -o "$OUTPUT_DIR/anubis_subs.txt" 
     chaos -d "$DOMAIN" -k "$CHAOS_KEY" -o "$OUTPUT_DIR/chaos_subs.txt" 
     sublist3r -d "$DOMAIN" -o "$OUTPUT_DIR/sublist3r_subs.txt" 
 
