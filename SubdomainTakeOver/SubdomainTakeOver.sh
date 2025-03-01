@@ -28,7 +28,7 @@ takeover_testing() {
     fi
     # cnames
     if command -v cnames &> /dev/null; then
-        cat "$domain_all_subdomains.txt" | cnames > cnames_output.txt
+        
     fi
     #second-order
     if command -v second-order &> /dev/null; then
