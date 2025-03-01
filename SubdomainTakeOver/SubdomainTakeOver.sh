@@ -7,9 +7,7 @@ takeover_testing() {
 
     
         subjack -w "$domain_all_subdomains.txt" -t 100 -timeout 30 -ssl -v > subjack_takeover.txt
-    fi
-    # SubOver
-    if command -v SubOver &> /dev/null; then
+    
         SubOver -l "$domain_all_subdomains.txt" -o SubOver_takeover.txt
     fi
     # autoSubTakeover
