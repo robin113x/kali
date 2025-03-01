@@ -3,12 +3,15 @@ takeover_testing() {
     echo "******************************** Subdomain Takeover Testing ********************************"
     # subjack
 
-    subzy r --targets "$domain_all_subdomains.txt"  | tee subdomain_takeOver.txt
+    	subzy r --targets "$domain_all_subdomains.txt"  | tee subdomain_takeOver.txt
 
     
         subjack -w "$domain_all_subdomains.txt" -t 100 -timeout 30 -ssl -v > subjack_takeover.txt
     
         SubOver -l "$domain_all_subdomains.txt" -o SubOver_takeover.txt
+
+
+        cat "$domain_all_subdomains.txt" | cnames > cnames_output.txt
     fi
     # autoSubTakeover
     if command -v autoSubTakeover &> /dev/null; then
