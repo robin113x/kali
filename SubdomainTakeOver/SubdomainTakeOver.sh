@@ -1,7 +1,7 @@
 # Subdomain Takeover Testing
 takeover_testing() {
     echo "******************************** Subdomain Takeover Testing ********************************"
-    # subjack
+    
 
     	subzy run --targets "$domain_all_subdomains.txt" --concurrency 100 --hide_fails --verify_ssl | tee subdomain_takeOver.txt
 
