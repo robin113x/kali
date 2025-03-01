@@ -2,6 +2,9 @@
 takeover_testing() {
     echo "******************************** Subdomain Takeover Testing ********************************"
     # subjack
+
+    subzy r --targets snap.txt  | tee subdomain_takeOver.txt
+
     if command -v subjack &> /dev/null; then
         subjack -w "$domain_all_subdomains.txt" -t 100 -timeout 30 -ssl -v > subjack_takeover.txt
     fi
