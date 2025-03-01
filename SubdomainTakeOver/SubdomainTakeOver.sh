@@ -4,7 +4,7 @@ takeover_testing() {
     # subjack
 
     	subzy r --targets "$domain_all_subdomains.txt"  | tee subdomain_takeOver.txt
-    	subzy run --targets subdomains.txt --concurrency 100 --hide_fails --verify_ssl
+    	subzy run --targets "$domain_all_subdomains.txt" --concurrency 100 --hide_fails --verify_ssl
 
     
         subjack -w "$domain_all_subdomains.txt" -t 100 -timeout 30 -ssl -v > subjack_takeover.txt
