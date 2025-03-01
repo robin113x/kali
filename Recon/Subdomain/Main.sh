@@ -48,7 +48,7 @@ if [ $choice == "y" ]; then
     wait
     shodan search domain:"$DOMAIN" | jq -r '.matches[]?.hostnames[]' | sort -u | tee "$OUTPUT_DIR/shodan_subdomain.txt"
     shodanx subdomain -d "$DOMAIN" -ra -o "$OUTPUT_DIR/shodanx_subdomain.txt"
-    findomain -t "$DOMAIN" -v -o $OUTPUT_DIR/findomain_subdomain.txt
+    findomain -t "$DOMAIN" -v -u $OUTPUT_DIR/findomain_subdomain.txt
     wait
     anubis -d "$DOMAIN" -o "$OUTPUT_DIR/anubis_subs.txt" 
     chaos -d "$DOMAIN" -k "$CHAOS_KEY" -o "$OUTPUT_DIR/chaos_subs.txt" 
