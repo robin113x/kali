@@ -59,7 +59,7 @@ if [ $choice == "y" ]; then
     grep '"domain"' "report/{domain}"*.json | awk -F'"' '{print $4}' | tee "$OUTPUT_DIR/knockpy_subdomain.txt"
     wait
     echo "******************************** Bruteforce Enumeration ********************************"
-    subrute -t "$DOMAIN" -r $DNS_RESOLVER -v -o "$OUTPUT_DIR/subbrute_subdomain.txt"
+    subrute  "$DOMAIN" -r $DNS_RESOLVER -v |tee "$OUTPUT_DIR/subbrute_subdomain.txt"
     wait
     gobuster dns -d "$DOMAIN" -w "$WORDLIST" -o $OUTPUT_DIR/gobuster_subdomain.txt
     wait
