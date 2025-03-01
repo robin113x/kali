@@ -5,7 +5,7 @@ takeover_testing() {
 
     subzy r --targets "$domain_all_subdomains.txt"  | tee subdomain_takeOver.txt
 
-    if command -v subjack &> /dev/null; then
+    
         subjack -w "$domain_all_subdomains.txt" -t 100 -timeout 30 -ssl -v > subjack_takeover.txt
     fi
     # SubOver
